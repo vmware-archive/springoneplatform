@@ -1,0 +1,2 @@
+gradle build
+cf push

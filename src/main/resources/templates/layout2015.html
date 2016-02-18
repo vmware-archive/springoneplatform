@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+
+	<head layout:fragment="head"> 
+		<title>SpringOne 2GX | September 14 - 17, 2015 | Washington DC</title>
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no' id='Viewport' name='viewport'></meta>
+		<link href='/css/2015/app.css' rel='stylesheet'></link>
+		<script rel='text/javascript' src='/js/2015/app.js'></script>
+		<link href='/favicon_white.png' rel='shortcut icon'></link>
+	  <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  
+		  ga('create', 'UA-71210611-1', 'auto');
+		  ga('send', 'pageview');
+	  </script>
+	</head>
+
+  <body>
+    <div id='navigation' layout:fragment="navigation">
+			<div id='desktop-only'>
+				<ul>
+					<div class='container'>
+						<a href='/2015'>
+							<img src='https://d1ophd2rlqbanb.cloudfront.net/springone2gx/SpringOne-logo-navy.png'></img>
+						</a>
+						<li id='nav-schedule'>
+							<a href='https://2015.event.springone2gx.com/schedule/2015-09-15'>Schedule</a>
+						</li>
+						<li id='nav-presenters'>
+							<a href='https://2015.event.springone2gx.com/presenters'>Speakers</a>
+						</li>
+						<li id='nav-training'>
+							<a href='/2015/training'>Training</a>
+						</li>
+						<li id='nav-sponsors'>
+							<a href='/2015/sponsors'>Sponsors</a>
+						</li>
+						<li id='nav-travel'>
+							<a href='/2015/travel'>Travel</a>
+						</li>
+						<li id='nav-contact'>
+							<a href='mailto:platform@pivotal.io'>Contact</a>
+						</li>
+						<li id='nav-account'>
+							<a href='https://2015.event.springone2gx.com/attendease/login'>Account</a>
+						</li>
+						<li id='nav-reg'>
+							<a href='https://2015.event.springone2gx.com/register'>Register</a>
+						</li>
+					</div>
+				</ul>
+			</div>
+			<div id='mobile-only'>
+				<div class='masthead'>
+					<nav class='navbar navbar-default navbar-fixed-top nav-justified' role='navigation'>
+						<div class='container'>
+							<div class='navbar-header'>
+								<button class='navbar-toggle collapsed' data-target='#primary-nav-collapsable' data-toggle='collapse' type='button'>
+									<span class='sr-only'>Toggle navigation</span>
+									<span class='icon-bar'></span>
+									<span class='icon-bar'></span>
+									<span class='icon-bar'></span>
+								</button>
+							</div>
+							<div class='nav-bar navbar-collapse collapse' id='primary-nav-collapsable' style='height: 1px;'>
+								<ul class='nav nav-justified nav-default'>
+									<li class='active'>
+										<a href='/'>Home</a>
+									</li>
+									<li id='nav-schedule'>
+										<a href='https://2015.event.springone2gx.com/schedule/2015-09-15'>Schedule</a>
+									</li>
+									<li id='nav-presenters'>
+										<a href='https://2015.event.springone2gx.com/presenters'>Speakers</a>
+									</li>
+									<li>
+										<a href='/training'>Training</a>
+									</li>
+									<li id='nav-sponsors'>
+										<a href='/sponsors'>Sponsors</a>
+									</li>
+									<li id='nav-travel'>
+										<a href='/travel'>Travel</a>
+									</li>
+									<li id='nav-contact'>
+										<a href='mailto:platform@pivotal.io'>Contact</a>
+									</li>
+									<li id='nav-account'>
+										<a href='https://2015.event.springone2gx.com/attendease/login'>Account</a>
+									</li>
+									<li class='nav-register inverse'>
+										<a href='https://2015.event.springone2gx.com/register'>Register now</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+    <div id='main'>
+        <div layout:fragment="content">
+          Content
+        </div><!--end of content-->
+    </div><!--end of main-->
+		<div class='footer'>
+			<img src='https://pivotalcontent.wpengine.com/springone2014/images/footer-bug.png'></img>
+			<ul>
+				<li>
+					<a href='/travel'>Travel</a>
+				</li>
+				<li>
+					<a href='https://2015.event.springone2gx.com/schedule/2015-09-15'>Schedule</a>
+				</li>
+				<li>
+					<a href='/training'>Training</a>
+				</li>
+				<li>
+					<a href='/sponsors'>Sponsors</a>
+				</li>
+				<li>
+					<a href='https://2015.event.springone2gx.com/attendease/login'>Account</a>
+				</li>
+				<li>
+					<a href='https://2015.event.springone2gx.com/register'>Register</a>
+				</li>
+				<li>
+					<a href='/code-of-conduct'>Code of Conduct</a>
+				</li>
+			</ul>
+			<p>
+				&copy;
+				<script>
+				  var d = new Date();
+				  document.write(d.getFullYear());
+				</script>
+				Pivotal Software, Inc. All rights reserved.
+				<a href='http://pivotal.io/terms-of-use' target='_blank'>Terms of Use</a>
+				<a href='http://pivotal.io/privacy-policy' target='_blank'>Privacy</a>
+			</p>
+    </div><!--end of footer-->
+  </body>
+</html>

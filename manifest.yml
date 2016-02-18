@@ -1,0 +1,9 @@
+---
+applications:
+- name: platform
+  buildpack: https://github.com/cloudfoundry/java-buildpack
+  memory: 512M
+  instances: 1
+  host: platform
+  domain: cfapps.io
+  path: build/libs/site-0.1.0.jar

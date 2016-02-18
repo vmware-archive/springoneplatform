@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+        maven { url "http://repo.spring.io/libs-snapshot" }
+        mavenLocal()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:0.5.0.M6")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+jar {
+    baseName = 'site'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+    maven { url "http://repo.spring.io/libs-snapshot" }
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:0.5.0.M6")
+    testCompile("junit:junit:4.11")    
+
+    compile 'org.thymeleaf:thymeleaf-spring3:2.0.18'
+    compile 'org.thymeleaf:thymeleaf:2.0.18'
+    compile 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.1.1'
+    compile 'com.github.mxab.thymeleaf.extras:thymeleaf-extras-data-attribute:1.2'
+    compile 'org.thymeleaf.extras:thymeleaf-extras-springsecurity3:2.0.0'
+
+    runtime 'net.sourceforge.nekohtml:nekohtml:1.9.15'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.9'
+}
