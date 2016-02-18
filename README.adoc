@@ -1,0 +1,19 @@
+= platform-java
+
+To run locally:
+
+[source]
+----
+$ ./gradlew clean bootRun
+----
+
+Visit http://localhost:8080/[http://localhost:8080/]
+
+To build and deploy to the cloud:
+
+[source]
+----
+$ ./gradlew clean build
+$ cf push -p springoneplatform-site-0.0.1-SNAPSHOT.jar
+----
+
