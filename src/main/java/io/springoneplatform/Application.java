@@ -1,4 +1,4 @@
-package webapp;
+package io.springoneplatform;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.SpringApplication;
