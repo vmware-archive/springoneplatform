@@ -25,14 +25,24 @@
 body {
   margin: 0;
   padding: 0;
-  background: no-repeat top -400px center #19172c;
+  background: url(https://d1ophd2rlqbanb.cloudfront.net/bg-triangles-full.png) no-repeat top -430px center #19172c;
   font-family: "Proxima Nova", sans-serif;
   color: white; }
 
 
 body#index {
-  background: no-repeat top -430px center #19172c; }
+  background: url(https://d1ophd2rlqbanb.cloudfront.net/full-small-triangles.png) no-repeat top -430px center #19172c;}
   
+  body#index #date,
+  body#index #location {
+    font-size: 29px;
+    font-weight: 400;
+    text-transform: uppercase; }
+
+  body#index #logolarge {
+    width: 600px;
+    padding: 40px 0; }
+
   body#index #header {
     overflow: hidden; }
     
@@ -57,7 +67,8 @@ body#index {
   background: rgba(25, 23, 44, 0.4); }
   
   #header #nav {
-    float: right; }
+    float: right; 
+    margin: 10px 0 0 0;}
     
     #header #nav li {
       display: inline-block;
@@ -77,6 +88,8 @@ img {
   vertical-align: middle;
   border: 0; }
 
+#logosmall {
+  width: 273px;}
 
 h1,
 h2,
@@ -306,4 +319,11 @@ body#thankyou .content {
     margin-left: auto; }
   
   #speakers .row:last-child {
-    margin-right: auto; } }
+    margin-right: auto; } 
+
+  body#index #logolarge{
+    padding: 20px 0; }
+
+  body#index #date,
+  body#index #location {
+    font-size: 18px;} }

@@ -17,3 +17,6 @@ $ ./gradlew clean build
 $ cf push -p springoneplatform-site-0.0.1-SNAPSHOT.jar
 ----
 
+Stage script: ./stage.sh
+
+Publish script: ./publish.sh

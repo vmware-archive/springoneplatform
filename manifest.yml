@@ -1,9 +1,23 @@
 ---
 applications:
+- name: springoneplatform
+  buildpack: https://github.com/cloudfoundry/java-buildpack
+  memory: 512M
+  instances: 2
+  host: springoneplatform
+  domain: cfapps.io
+  path: build/libs/springoneplatform-site-0.0.1-SNAPSHOT.jar
+- name: springoneplatform2
+  buildpack: https://github.com/cloudfoundry/java-buildpack
+  memory: 512M
+  instances: 2
+  host: springoneplatform2
+  domain: cfapps.io
+  path: build/libs/springoneplatform-site-0.0.1-SNAPSHOT.jar
 - name: platform
   buildpack: https://github.com/cloudfoundry/java-buildpack
   memory: 512M
   instances: 1
   host: platform
   domain: cfapps.io
-  path: build/libs/site-0.1.0.jar
+  path: build/libs/springoneplatform-site-0.0.1-SNAPSHOT.jar
