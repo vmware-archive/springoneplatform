@@ -1,4 +1,8 @@
-= platform-java
+= SpringOne Platform site
+
+This Spring Boot application is used to host Pivotal's annual Spring conference. It provides a nice example of how simple it is to create websites built with mostly static content.
+
+== Run/Deployment
 
 To run locally:
 
@@ -20,3 +24,112 @@ $ cf push -p springoneplatform-site-0.0.1-SNAPSHOT.jar
 Stage script: ./stage.sh
 
 Publish script: ./publish.sh
+
+== Architecture
+
+The app doesn't have a complex architecture because it's not really needed. Instead, it's quite simple.
+
+For starters, the application has a Spring Boot `public static void main`:
+
+[source,java]
+----
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
+
+}
+----
+
+* `@SpringBootApplication` is used to turn on auto-configuration, component scanning, and mark this class as a source of beans.
+* `SpringApplication.run()` actually launches the app, making it easy to run it *without a separate container*.
+
+Spring Boot's auto-configuration will scan the classpath, and seeing things like Spring MVC, Thymeleaf, and Spring Security, create enough beans to run the application.
+
+The next step involves creating some simple routes to make the UI:
+
+[source,java]
+----
+@Controller
+public class SiteController {
+
+	@RequestMapping("/code-of-conduct")
+	public String codeofconduct() {
+		return "codeofconduct";
+	}
+
+	@RequestMapping("/faq")
+	public String faq() {
+		return "faq";
+	}
+
+	@RequestMapping("/")
+	public String index() {
+		return "index";
+	}
+
+	@RequestMapping("/submit")
+	public String submit() {
+		return "submit";
+	}
+
+	...
+
+
+	@RequestMapping("*")
+	public String fallbackMethod() {
+		return "404";
+	}
+
+}
+----
+
+* `@Controller` is a Spring MVC annotation that marks this class as a controller.
+* `@RequestMapping` flags these methods with routes.
+* Each method returns the name a template. Spring Boot's Thymeleaf auto-configuration resolves it to `src/main/resources/templates/<name>.html`.
+
+NOTE: There are routes to map onto the previous year's templates. They have been filtered out for brevity.
+
+This application also uses Spring Boot's Actuator module to provide some extra ops info. The `/info` endpoint combined with the *gradle-git-properties* plugin makes it possible to see exactly which version of the app is hosted in production.
+
+Peeking behind the covers for ops data is often deemed sensitive, so this app has Spring Security to hide the details behind a login page. Since the rest of the site is wide open, the following security policy makes this possible:
+
+[source,java]
+----
+@Component
+public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+		http
+			.authorizeRequests()
+
+				// Secure management endpoints
+				.antMatchers("/info").authenticated()
+
+				// But enable everything else
+				.antMatchers("/*").permitAll()
+
+				.and()
+			// Use a form login to access the secured bits
+			.formLogin()
+				.permitAll();
+	}
+}
+----
+
+* `WebSecurityConfigurerAdapter` is the ideal class to base security configurations.
+* `configure(HttpSecurity http)` is an override method to lay out your policy.
+
+The policy has a listing of rules it walks down until the requested route matches. (That's why you put /* at the bottom.) In this case, `/info` requires authentication while anything else requires no security at all.
+
+By default, Spring Boot switches on HTTP BASIC. Since BASIC requires shutting down the browser to cancel (an inconvenience) and there is no need for using cURL, this policy switches to FORM-based security.
+
+With this much Spring code in place, the rest of the app is a set of Thymeleaf templates combined with some relatively simple JavaScript and CSS.
+
+* `src/main/resources/static` is the source folder for fixed resources (JavaScript and CSS). Anything here is served from the app's root URI.
+* `src/main/resources/template` is the source folder for Thymeleaf templates.
+
+Feel free to clone and tinker with this site, even using it for one of your own events.

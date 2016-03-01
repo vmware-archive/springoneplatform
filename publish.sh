@@ -1,7 +1,10 @@
+#!/usr/bin/env bash
+
 cf target -o oss -s production
 
 ./gradlew clean build
 
+# Perform a blue/green deployment
 
 curl_results=$(curl springoneplatform.cfapps.io)
 
