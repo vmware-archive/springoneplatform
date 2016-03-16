@@ -2,14 +2,28 @@
     xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
     layout:decorator="layout">
 
-	<body class='lazy' id='index' data-original='https://d1ophd2rlqbanb.cloudfront.net/full-small-triangles.png' style='background-image:url(https://d1ophd2rlqbanb.cloudfront.net/full-small-triangles.png)'>
+	<body id='index'>
 
     <div layout:fragment="content">
       <div class='container-main'>
+				<div id="slideshow">
+				  <div id='photos'>
+				  	<div class='photo activephoto'></div>
+				  	<div class='photo'></div>
+				  	<div class='photo'></div>
+				  	<div class='photo'></div>
+				  	<div class='photo'></div>
+				  </div>
+				  <div id='slideshow-overlay'>
+				  	<div id='regtext'>
+					  	<h1>Registration Open</h1>
+					  	<div class='cta'>
+					  		<a href='/register'>Register Today <div class='arrow-right'></div></a>
+					  	</div>
+					  </div>
+				  </div>
+				</div>
         <div class='container'>
-          <div id='date'>August 1&ndash;4, 2016</div>
-          <img id='logolarge' src='https://d1ophd2rlqbanb.cloudfront.net/logo-springone-platform.png'></img>
-          <div id='location'>Aria &middot; Las Vegas</div>
 	        <div id='intro'>
 		        <h1>Join us for SpringOne Platform</h1>
 		        <h4>SpringOne Platform brings together the people, process and tools for delivering and operating software services. Learn and share with the startups and enterprises leveraging modern Java with Spring connecting all the pieces of the modern software puzzle from developer, operator, architect, data scientist to executive. If you are looking for training, technical deep dives or cases studies,  SpringOne Platform will have something for you. From the cloud native to those just starting to transform, there will be in-depth advanced technical topics and accessible introductory content covering agile, continuous delivery, devops, microservices, data analytics, machine learning, and more.</h4>
@@ -21,19 +35,28 @@
 		        </div>
 	        </div>
 	        <div id='learnshare'>
-		        <h1>Learn &amp; Share</h1>
-		        <h4>Learn and share with the developers, operators, data scientists and technology leaders transforming how the world builds software at SpringOne Platform.</h4>
+		        <h1 class='nomargin'>Learn &amp; Share</h1>
+		        <h4 class='nomargin'>Learn and share with the developers, operators, data scientists and technology leaders transforming how the world builds software at SpringOne Platform.</h4>
 	        </div>
 	      </div>
+	    </div>
+	    <div id='featuredspeaker'>
+	    	<div class='container'>
+	    		<img src='https://d1ophd2rlqbanb.cloudfront.net/featured_cockroft.png'></img>
+	    		<div class='text'>
+	    			<h5>Keynote Speaker</h5>
+	    			<h4>Adrian Cockcroft</h4>
+	    			<p>Adrian has had a long career working at the leading edge of technology. Before joining Battery, Adrian helped lead Netflix’s migration to a large scale, highly available public-cloud architecture and the open sourcing of the cloud-native NetflixOSS platform. Adrian was a founding member of eBay Research Labs and a distinguished engineer at Sun Microsystems.</p>
+	    		</div>
+	    	</div>
 	    </div>
       <div id='speakers'>
         <div class='row'>
 	        <div class='capsule'>
 	        	<img class='lazy' data-height='155' data-original='https://d1ophd2rlqbanb.cloudfront.net/capsule-1.png' data-width='221'></img>
 	        </div>
-	        <div class='capsule'>
-	        	<img class='lazy' data-height='155' data-original='https://d1ophd2rlqbanb.cloudfront.net/gierke.png' data-width='221'></img>
-	       	 	<h5>Oliver Gierke</h5>
+					<div class="capsule">
+	        	<img class="lazy" data-height="155" data-original="https://d1ophd2rlqbanb.cloudfront.net/capsule-8.png" data-width="221"></img>
 	        </div>
 	        <div class='capsule'>
 	        	<img class='lazy' data-height='155' data-original='https://d1ophd2rlqbanb.cloudfront.net/davis.png' data-width='221'></img>
@@ -93,12 +116,37 @@
 	        	<img class='lazy' data-height='155' data-original='https://d1ophd2rlqbanb.cloudfront.net/capsule-8.png' data-width='221'></img>
 	        </div>
         </div>
+        <div class='row'>
+	        <div class='capsule'>
+	        	<img class='lazy' data-height='155' data-original='https://d1ophd2rlqbanb.cloudfront.net/capsule-1.png' data-width='221'></img>
+	        </div>
+	        <div class='capsule'>
+	        	<img class='lazy' data-height='155' data-original='https://d1ophd2rlqbanb.cloudfront.net/kromhout.png' data-width='221'></img>
+	        	<h5>Bridget Kromhout</h5>
+	        </div>
+	        <div class='capsule'>
+	        	<img class='lazy' data-height='155' data-original='https://d1ophd2rlqbanb.cloudfront.net/gierke.png' data-width='221'></img>
+	       	 	<h5>Oliver Gierke</h5>
+	        </div>
+	        <div class='capsule'>
+	        	<img class='lazy' data-height='155' data-original='https://d1ophd2rlqbanb.cloudfront.net/west.png' data-width='221'></img>
+	       	 	<h5>Casey West</h5>
+	        </div>
+	        <div class='capsule'>
+	        	<img class='lazy' data-height='155' data-original='https://d1ophd2rlqbanb.cloudfront.net/capsule-3.png' data-width='221'></img>
+	        </div>
+        </div>
       </div>
       <div id='aria'>
         <div class='container'>
-        	<h1>SpringOne Platform, at the Aria in Las Vegas</h1>
+        	<div class='text'>
+	        	<h1>Join us at the Aria in Las Vegas</h1>
+		        <div class='cta'>
+			        <a href='/register'>Register Today!</a>
+		        </div>
+		      </div>
+        	<img class='lazy' data-height='409' data-original='https://d1ophd2rlqbanb.cloudfront.net/capsule-aria.png' data-width='607'></img>
         </div>
-        <img class='lazy' data-height='840' data-original='https://d1ophd2rlqbanb.cloudfront.net/aria-1440-cropped.png' data-width='1440'></img>
     	</div>
     </div>
 	</body>

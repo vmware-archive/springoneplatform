@@ -37,9 +37,19 @@ public class SiteController {
 		return "index";
 	}
 
+	@RequestMapping("/register")
+	public String register() {
+		return "redirect:https://2016.event.springoneplatform.io/register";
+	}
+
 	@RequestMapping("/submit")
 	public String submit() {
 		return "submit";
+	}
+
+	@RequestMapping("/training")
+	public String training() {
+		return "training";
 	}
 
 	@RequestMapping("/2015")
