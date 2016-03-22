@@ -21,71 +21,73 @@
 </head>
 
   <body>
-    <div id='wrap'>
-      <div id='header' layout:fragment="header">
-        <div class='container'>
-          <a href='/' id='logo'>
-            <img id='logosmall' src='https://d1ophd2rlqbanb.cloudfront.net/logo-springone-platform.png'></img>
-          </a>
-          <div id='navdate'>
-            <ul id='nav'>
-              <li>
-                <a id='cfp-link' href='/submit'>Call for Proposals</a>
-              </li>
-              <li>
-                <a download='https://d1ophd2rlqbanb.cloudfront.net/SpringOnePlatform_PROSPECTUS.pdf' href='https://d1ophd2rlqbanb.cloudfront.net/SpringOnePlatform_PROSPECTUS.pdf'>Sponsor</a>
-              </li>
-              <li>
-                <a id='training-link' href='/training'>Training</a>
-              </li>
-              <li>
-                <a id='faq-link' href='/faq'>FAQ</a>
-              </li>
-              <li>
-                <a href='/2015'>SpringOne2GX 2015</a>
-              </li>
-            </ul>
-            <h4>AUGUST 1–4, 2016  •  ARIA, LAS VEGAS</h4>
+    <div id='fixedwidthcontainer'>
+      <div id='wrap'>
+        <div id='header' layout:fragment="header">
+          <div class='container'>
+            <a href='/' id='logo'>
+              <img id='logosmall' src='https://d1ophd2rlqbanb.cloudfront.net/logo-springone-platform.png'></img>
+            </a>
+            <div id='navdate'>
+              <ul id='nav'>
+                <li>
+                  <a id='cfp-link' href='/submit'>Call for Proposals</a>
+                </li>
+                <li>
+                  <a download='https://d1ophd2rlqbanb.cloudfront.net/SpringOnePlatform_PROSPECTUS.pdf' href='https://d1ophd2rlqbanb.cloudfront.net/SpringOnePlatform_PROSPECTUS.pdf'>Sponsor</a>
+                </li>
+                <li>
+                  <a id='training-link' href='/training'>Training</a>
+                </li>
+                <li>
+                  <a id='faq-link' href='/faq'>FAQ</a>
+                </li>
+                <li>
+                  <a href='/2015'>SpringOne2GX 2015</a>
+                </li>
+              </ul>
+              <h4>AUGUST 1–4, 2016  •  ARIA, LAS VEGAS</h4>
+            </div>
           </div>
+        </div><!--end of header-->
+      </div><!--end of wrap-->
+      <div id='main'>
+          <div layout:fragment="content">
+            Content
+          </div><!--end of content-->
+      </div><!--end of main-->
+      <div id='footer'>
+        <div class='container'>
+          <h4>
+            <a href='/faq'>FAQ</a>
+            &middot;
+            <a href='/submit'>Call for Proposals</a>
+            &middot;
+            <a download='https://d1ophd2rlqbanb.cloudfront.net/SpringOnePlatform_PROSPECTUS.pdf' href='https://d1ophd2rlqbanb.cloudfront.net/SpringOnePlatform_PROSPECTUS.pdf'>Sponsor</a>
+            &middot;
+            <a href='mailto:platform@pivotal.io'>Contact</a>
+            &middot;
+            <a href='/code-of-conduct'>Code of Conduct</a>
+            &middot;
+            <a href='/2015'>SpringOne2GX 2015</a>
+          </h4>
+          <div id='social'>
+            <a href='https://twitter.com/hashtag/springone' target='_blank'>#springone</a>
+            <a href='https://twitter.com/@spring1platform' target='_blank'>@spring1platform</a>
+            <a href='https://twitter.com/@pivotal' target='_blank'>@pivotal</a>
+          </div>
+          <h5>
+            &copy;
+            <script>
+              var d = new Date();
+              document.write(d.getFullYear());
+            </script>
+            <a href='http://pivotal.io/' target='_blank'>Pivotal Software</a>, Inc. All rights reserved.
+            <a href='http://pivotal.io/terms-of-use' target='_blank'>Terms of Use</a>
+            <a href='http://pivotal.io/privacy-policy' target='_blank'>Privacy</a>
+          </h5>
         </div>
-      </div><!--end of header-->
-    </div><!--end of wrap-->
-    <div id='main'>
-        <div layout:fragment="content">
-          Content
-        </div><!--end of content-->
-    </div><!--end of main-->
-    <div id='footer'>
-      <div class='container'>
-        <h4>
-          <a href='/faq'>FAQ</a>
-          &middot;
-          <a href='/submit'>Call for Proposals</a>
-          &middot;
-          <a download='https://d1ophd2rlqbanb.cloudfront.net/SpringOnePlatform_PROSPECTUS.pdf' href='https://d1ophd2rlqbanb.cloudfront.net/SpringOnePlatform_PROSPECTUS.pdf'>Sponsor</a>
-          &middot;
-          <a href='mailto:platform@pivotal.io'>Contact</a>
-          &middot;
-          <a href='/code-of-conduct'>Code of Conduct</a>
-          &middot;
-          <a href='/2015'>SpringOne2GX 2015</a>
-        </h4>
-        <div id='social'>
-          <a href='https://twitter.com/hashtag/springone' target='_blank'>#springone</a>
-          <a href='https://twitter.com/@spring1platform' target='_blank'>@spring1platform</a>
-          <a href='https://twitter.com/@pivotal' target='_blank'>@pivotal</a>
-        </div>
-        <h5>
-          &copy;
-          <script>
-            var d = new Date();
-            document.write(d.getFullYear());
-          </script>
-          <a href='http://pivotal.io/' target='_blank'>Pivotal Software</a>, Inc. All rights reserved.
-          <a href='http://pivotal.io/terms-of-use' target='_blank'>Terms of Use</a>
-          <a href='http://pivotal.io/privacy-policy' target='_blank'>Privacy</a>
-        </h5>
-      </div>
-    </div><!--end of footer-->
+      </div><!--end of footer-->
+    </div>
   </body>
 </html>
