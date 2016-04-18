@@ -23,5 +23,7 @@ else
   cf stop springoneplatform
 fi
 
+cf stop platform
+
 
 

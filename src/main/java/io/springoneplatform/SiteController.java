@@ -52,6 +52,11 @@ public class SiteController {
 		return "training";
 	}
 
+	@RequestMapping("/travel")
+	public String travel() {
+		return "travel";
+	}
+
 	@RequestMapping("/2015")
 	public String index2015() {
 		return "index2015";
