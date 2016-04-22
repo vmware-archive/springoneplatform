@@ -421,12 +421,14 @@ input {
   margin-bottom: 25px;
 }
 
-#social a {
+#social a,
+.altlink {
   color: #00ae9e;
   margin: 0 10px;
 }
 
-#social a:hover {
+#social a:hover,
+.altlink:hover {
   color: white;
 }
 
