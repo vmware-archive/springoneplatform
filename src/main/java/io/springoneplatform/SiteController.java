@@ -22,6 +22,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class SiteController {
 
+	@RequestMapping("/agenda")
+	public String agenda() {
+		return "redirect:https://2016.event.springoneplatform.io/schedule/sessions";
+	}
+
 	@RequestMapping("/code-of-conduct")
 	public String codeofconduct() {
 		return "codeofconduct";
@@ -40,6 +45,11 @@ public class SiteController {
 	@RequestMapping("/register")
 	public String register() {
 		return "redirect:https://2016.event.springoneplatform.io/register";
+	}
+
+	@RequestMapping("/sessions")
+	public String sessions() {
+		return "redirect:https://2016.event.springoneplatform.io/schedule/sessions";
 	}
 
 	@RequestMapping("/submit")
