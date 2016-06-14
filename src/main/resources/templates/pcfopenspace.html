@@ -1,0 +1,65 @@
+<html
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorator="layout">
+    <head>
+    	<title>Pivotal Cloud Foundry Open Space | SpringOne Platform | August 1 - 4, 2016 | Las Vegas</title>
+    </head>
+
+	<body id='pcfopenspace'>
+
+    <div layout:fragment="content">
+			<div class='content'>
+				<div id='pcfopenspacebanner'></div>
+				<div class='container'>
+					<h2 id='logoh2'>
+						<img class='pcflogosvg' src="https://d1fto35gcfffzn.cloudfront.net/images/products/gettingstartedwithpcf/logo-pivotal-cloud-foundry-white.svg"></img>
+						Open Space
+					</h2>
+					<p id='openspaceintro' class='center smoothwebkit'><a href='https://en.wikipedia.org/wiki/Open_Space_Technology'  target="_blank">Open Space</a> is the simplest meeting that could possibly work, based on (un)common sense of what people do naturally in productive meetings.</p>
+					<div class='shortwhitebar'></div>
+					<div class='sixtywide'>
+						<p class='smoothwebkit'>You are invited to join with all Pivotal Cloud Foundry users for a community discussion about the future, August 1st from 1:00&ndash;5:00 pm at SpringOne Platform.</p>
+						<p class='smoothwebkit'>We’ll spend half a day discussing everything Pivotal Cloud Foundry: operations, development, tips, tricks, roadmap and anything else that the group is interested in exploring. Regardless of where you are on the journey, from Cloud Native curious to Cloud Foundry in production, you’ll be joining the Pivotal Cloud Foundry experts and users in unfiltered discussion about what works and where we all go from here.</p>
+						<div class='pcfspeakers'>
+							<div class='thirtywide center'>
+								<div class='speakerphoto' id='watters'></div>
+								<div class='bio'>
+									<p>James Watters <br/><span><a href="http://twitter.com/@wattersjames" target="_blank">@wattersjames</a></span></p>
+									<p class='smoothwebkit sizefourteen uppercase'>Senior Vice President, Cloud Product</p>
+								</div>
+							</div>
+							<div class='thirtywide center'>
+								<div class='speakerphoto' id='shafer'></div>
+								<div class='bio'>
+									<p>Andrew Clay Shafer <br/><span><a href="http://twitter.com/@littleidea" target="_blank">@littleidea</a></span></p>
+									<p class='smoothwebkit sizefourteen uppercase'>Senior Director of Technology</p>
+								</div>
+							</div>
+							<div class='thirtywide center'>
+								<div class='speakerphoto' id='kropf'></div>
+								<div class='bio'>
+									<p>Mark Kropf <br/><span><a href="http://twitter.com/@markkropf" target="_blank">@markkropf</a></span></p>
+									<p class='smoothwebkit sizefourteen uppercase'>Director of Product Management</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='thirtywide'>
+						<h2>RSVP</h2>
+						<script src="//app-sj05.marketo.com/js/forms2/js/forms2.min.js"></script>
+						<form id="mktoForm_3180"></form>
+						<script>
+							MktoForms2.loadForm("https://app-sj05.marketo.com", "625-IUJ-009", 3180 , function(form){
+								form.onSuccess(function(values, followUpUrl){
+									location.href = "/pcf-open-space/confirmation";
+									form.getFormElem().hide();
+									return false;
+								});
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

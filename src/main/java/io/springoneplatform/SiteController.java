@@ -42,6 +42,16 @@ public class SiteController {
 		return "index";
 	}
 
+	@RequestMapping("/pcf-open-space")
+	public String pcfopenspace() {
+		return "pcfopenspace";
+	}
+
+	@RequestMapping("/pcf-open-space/confirmation")
+	public String pcfopenspaceconfirmation() {
+		return "pcfopenspaceconfirmation";
+	}
+
 	@RequestMapping("/register")
 	public String register() {
 		return "redirect:https://2016.event.springoneplatform.io/register";

@@ -53,7 +53,7 @@
 						<p>COURSES</p>
 						<ul>
 							<li><a href='#developing-applications-with-cloud-foundry'>Developing Applications with Cloud Foundry</a></li>
-							<li><a href='#building-the-connected-car'>Building the Connected Car</a></li>
+							<li><a href='#building-big-data-solutions'>Building Big Data Solutions</a></li>
 							<li><a href='#spring-cloud-services'>Spring Cloud Services</a></li>
 							<li><a href='#spring-boot-primer'>Spring Boot Primer</a></li>
 							<li><a href='#spring-cloud-data-flow'>Spring Cloud Data Flow</a></li>
@@ -106,10 +106,10 @@
 						<br/>
 						<hr/>
 						<br/>
-						<h2 id='building-the-connected-car'>Building the Connected Car</h2>
+						<h2 id='building-big-data-solutions'>Building Big Data Solutions</h2>
 						<p><u>Course Description</u></p>
 						<p>
-						At one of the recent Spring One events, many folks were introduced to the Connected Car demo, a demonstration of a solution built with Pivotal products aimed at the Internet of Things. This 2-day workshop will allow attendees to walk through the architectural components getting a chance to build various parts of the architecture. At the end of the workshop, attendees will understand where various technologies can fit architecturally as well as a basic understanding of how to implement those technologies in a solution.
+						Many of today’s enterprises are facing the explosion of data collected and stored as streams of data are produced from a myriad of connected devices, often referred to as the Internet of Things (IoT). This 2-day workshop will examine the problem and offer an architecture for collecting, storing and analyzing massive streams of data. In the workshop, attendees will walk through the architectural components getting a chance to build various parts of the architecture. At the end of the workshop, attendees will understand where various technologies can fit architecturally as well as gain a basic understanding of how to implement those technologies in a solution.
 						</p>
 						<p><u>In this course, students will:</u></p>
 						<ul>
@@ -126,16 +126,16 @@
 						Explore data science and analytics concepts
 						</li>
 						<li>
-						Explore and write analytics using Pivotal HDB and/or Pivotal Greenplum
+						Explore and write analytics using Pivotal HDB
 						</li>
 						</ul>
 						<p><u>Workshop Topics</u></p>
 						<ul>
 						<li>
-						 Introduction to the Connected Car
+						Internet of Things and Big Data
 						</li>
 						<li>
-						Overview of Spring Cloud Data Flow
+						Overview of Spring Cloud Data Flow (formerly Spring XD)
 						</li>
 						<li>
 						Creating custom Spring Cloud Data Flow streams
@@ -152,6 +152,12 @@
 						<li>
 						Performing analytics with HDB
 						</li>
+						</ul>
+						<p><u>Target Audience</u></p>
+						<ul>
+							<li>Developers</li>
+							<li>Architects</li>
+							<li>Analysts</li>
 						</ul>
 						<p><u>Pre-requisites</u></p>
 						<ul>
@@ -186,8 +192,9 @@
 						This 2-day hands-on training course will show you how to leverage Spring Cloud projects to build Cloud Native applications.  We'll focus on the Spring Cloud Config and Spring Cloud Netflix projects, study the concepts behind Cloud Native Applications, and cover these specific topics:
 						</p>
 						<ul>
-							<li>Why build cloud native applications?</li>
+							<li>Why build Cloud Native applications?</li>
 							<li>Spring Boot Overview</li>
+							<li>Microservices, PaaS and Cloud Native Design</li>
 							<li>Configuration as a Service</li>
 							<li>Service Discovery with Eureka</li>
 							<li>Load Balancing with Ribbon</li>
@@ -212,7 +219,8 @@
 						<ul>
 							<li>Java (JDK), Maven, git, curl and your favorite IDE installed</li>
 							<li>Pivotal Cloud Foundry CLI installed</li>
-							<li>Access to github account</li>
+							<li>Access to GitHub account</li>
+							<li>A working Pivotal Web Services account</li>
 						</ul>
 						<br/>
 						<hr/>
@@ -236,9 +244,11 @@
 						<li>Data Access</li>
 						<li>Testing</li>
 						<li>Security</li>
+						<li>Messaging</li>
 						<li>Deployment</li>
 						<li>Actuator</li>
 						<li>Microservices and Cloud</li>
+						<li>More Features</li>
 						</ul>
 						<p><u>Target Audience</u></p>
 						<p>
@@ -249,11 +259,19 @@
 						Spring Framework experience. Presumes foundational understanding of Spring.
 						</p>
 						<p><u>Technical Requirements</u></p>
-						<p>Java 1.8 installed</p>
+						<ul>
+							<li>Java 1.8 installed</li>
+							<li>GitHub account</li>
+							<li>Maven / Gradle installed</li>
+							<li>[Optional] <a href='https://run.pivotal.io'>PWS</a> account (Trial account)</li>
+							<li>[Optional] <a href='https://github.com/cloudfoundry/cli#downloads'>Cloud Foundry CLI</a></li>
+							<li>[Optional] <a href='https://network.pivotal.io/products/pcfdev'>PCFDev</a> installed</li>
+
+						</ul>
 						<br/>
 						<hr/>
 						<br/>
-						<h2 id='spring-cloud-data-flow'>Spring Cloud Data Flow</h2>
+						<h2 id='spring-cloud-data-flow'>Spring Cloud Data Flow (formerly Spring XD)</h2>
 						<p><u>Course Description</u></p>
 						<p>
 						This 2-day workshop is designed for developers and architects responsible for leveraging Spring Cloud Data Flow for data ingestion in a Cloud environment. Through hands-on labs, the course explores installation and administration of Spring Cloud Data Flow, usage of the Spring Cloud Data Flow Shell, creating, configuring, deploying, and scaling Spring Cloud Streams and jobs and the development of custom modules using Spring Boot microservices. Students will learn how to configure the product for various deployment scenarios.
@@ -295,6 +313,7 @@
 						<ul>
 						<li>JDK 8 or later installed</li>
 						<li>Apache Maven installed</li>
+						<li><a href='https://network.pivotal.io/products/pcfdev'>PCFDev</a> installed</li>
 						<li>Ability to 
 							<ul>
 								<li>Install and run a single-node instance of Apache Hadoop, or</li>

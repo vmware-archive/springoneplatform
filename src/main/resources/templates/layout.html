@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
 
 <head layout:fragment="head"> 
-    <link rel="stylesheet" type="text/css" media="all" href="/css/app.css" th:href="@{/css/app.css}" />
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/app.css(v=${#dates.format(#dates.createNow(), 'mm')})}" />
     <script src='/js/app.js' th:href="@{/js/app.js}"></script>
     <title>SpringOne Platform | August 1&mdash;4, 2016 | Las Vegas</title>
     <meta content="SpringOne Platform brings together the people, process and tools for delivering and operating software services. Learn and share with the startups and enterprises leveraging modern Java with Spring connecting all the pieces of the modern software puzzle from developer, operator, architect, data scientist to executive." property='og:description'></meta>
@@ -97,5 +97,13 @@
         </div>
       </div><!--end of footer-->
     </div>
+    <!-- Twitter universal website tag code -->
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">twttr.conversion.trackPid('nuzje', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=nuzje&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=nuzje&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" />
+    </noscript>
+    <!-- End Twitter universal website tag code -->
   </body>
 </html>

@@ -145,24 +145,31 @@ a {
 
 
 .cta a,
-.btn {
-  padding: 12px 28px;
-  background: #00ae9e;
+.btn,
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+  padding: 12px 28px !important;
+  background: #00ae9e !important;
   border-radius: 50px;
-  font-size: 24px;
+  font-size: 24px !important;
   display: inline-block;
-  border: none;
+  border: none !important;
   color: white !important;
   cursor: pointer; 
   font-weight: 300;}
   
   .cta a:hover,
-  .btn:hover {
-    background: #22c6b2; }
+  .btn:hover,
+  .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+    background: #22c6b2 !important; }
 
 
 .nomargin {
   margin: 0; }
+
+.smoothwebkit {
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+}
 
 form {
   max-width: 500px;
@@ -189,6 +196,58 @@ textarea {
 
 input {
   margin-bottom: 5px; }
+
+
+.mktoForm {
+  max-width: 285px !important;
+  margin: 0 !important;
+}
+
+.mktoForm input[type="text"], .mktoForm input[type="url"], .mktoForm input[type="email"], .mktoForm input[type="tel"], .mktoForm input[type="number"], .mktoForm input[type="date"], .mktoForm textarea.mktoField, .mktoForm select.mktoField {
+  width: 285px !important;
+  height: 42px !important;
+  padding: 2px 10px !important;
+  font-size: 15px;
+  font-weight: 300;
+  color: #999999;
+  border: 1px solid #ccc !important; 
+  border-radius: 0px; 
+}  
+
+.mktoForm select {
+  background: url(https://d1fto35gcfffzn.cloudfront.net/images/icons/icon-angledown-999.png) no-repeat #fff right 10px center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.mktoForm .mktoRequiredField .mktoAsterix {
+  display: none !important;
+}
+
+.mktoForm .mktoOffset, .mktoForm .mktoGutter {
+  width: 0 !important;
+}
+
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+  float: left;
+}
+
+.mktoForm .mktoError .mktoErrorMsg {
+  background-color: white !important;
+  background-image: none !important;
+  border: 1px solid #444 !important;
+  text-shadow: none !important;
+  color: #666666 !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+}
+
+.mktoForm .mktoError .mktoErrorArrow {
+  background-color: white !important;
+  border: 1px solid black !important;
+}
 
 
 .uppercase {
@@ -759,6 +818,39 @@ input {
     height: 40px;
   }
 
+  #sponsors #insys {
+    width: 170px;
+  }
+
+  #sponsors #jetbrains {
+    width: 140px;
+    padding: 15px 40px;
+  }
+
+  #sponsors #techolution {
+    max-width: 230px;
+    margin-top: 4px;
+  }
+
+  #sponsors #tcs {
+    max-width: 120px;
+    padding: 25px 40px;
+  }
+
+  #sponsors #target {
+    height: 120px;
+    padding: 20px 40px;
+  }
+
+  #sponsors #gcp {
+    width: 175px;
+    padding: 30px 40px;
+  }
+
+  #sponsors #heroku {
+    height: 60px;
+    padding: 47px 40px;
+  }
 
 #footer {
   padding: 50px 0 80px;
@@ -954,6 +1046,121 @@ body#agenda #stats {
     margin-right: 18px;
   }
 
+body#pcfopenspace .pcflogosvg {
+  height: 70px;
+  margin: 0 20px 23px 0;
+}
+  body#pcfopenspace #logoh2 {
+    margin: 60px 0 10px;
+    font-size: 72px;
+    text-align: center;
+  }
+
+  body#pcfopenspace #openspaceintro {
+    font-style: italic;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .shortwhitebar {
+    margin: 25px auto;
+    height: 2px;
+    background: white;
+    width: 60px;
+  }
+
+  body#pcfopenspace #date {
+    letter-spacing: 0.15em;
+  }
+
+  body#pcfopenspace #pcfopenspacebanner {
+    background: url(https://d1ophd2rlqbanb.cloudfront.net/slideshow/new/SpringOnePlatform-PhotoCrops-1440x500-D.jpg) no-repeat;
+    height: 347px;
+    text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(16,17,40,0.5);
+    margin-bottom: 40px;
+  }
+
+  body#pcfopenspace #pcfopenspacebanner p {
+    font-size: 16px;
+  }
+
+  body#pcfopenspace .content p {
+    font-size: 18px;
+  }
+
+  body#pcfopenspace .bio p {
+    font-size: 16px;
+  }
+
+  body#pcfopenspace .content h2 {
+    margin: 14px 0 10px;
+  }
+
+  body#pcfopenspace .pcfspeakers {
+    margin: 40px auto 0;
+    text-align: center;
+  }
+
+  body#pcfopenspace .pcfspeaker {
+    margin: 30px 0 0;
+  }
+
+  body#pcfopenspace .pcfspeaker .sixtywide {
+    margin-right: 0;
+  }
+
+  body#pcfopenspace .pcfspeaker .thirtywide {
+    width: 36%;
+  }
+
+  body#pcfopenspace .pcfspeaker h3 {
+    margin-top: 0;
+  }
+
+  body#pcfopenspace .pcfspeaker h3 span {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 5px;
+  }
+
+  body#pcfopenspace .speakerphoto {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto 10px;
+  }
+
+  .sizefourteen {
+    font-size: 14px !important;
+  }
+
+  body#pcfopenspace #shafer {
+    background: url(https://d1fto35gcfffzn.cloudfront.net/images/speakers/shafer.png) no-repeat;
+  }
+
+  body#pcfopenspace #kropf {
+    background: url(https://d1fto35gcfffzn.cloudfront.net/images/speakers/kropf.png) no-repeat;
+  }
+
+  body#pcfopenspace #watters {
+    background: url(https://d1fto35gcfffzn.cloudfront.net/images/speakers/watters.png) no-repeat;
+  }
+
+.sixtywide {
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 70px;
+}
+
+.thirtywide {
+  width: 32%;
+  display: inline-block;
+  vertical-align: top;
+}
+
 @media(max-width: 1166px) {
   .arrowcontainerright,
   .arrowcontainerleft {
@@ -981,6 +1188,28 @@ body#agenda #stats {
   body#index #header #nav {
     margin: 20px 0 0; }
 
+}
+
+@media  (max-width: 981px) {
+  body#pcfopenspace .content .sixtywide,
+  body#pcfopenspace .content .thirtywide {
+    width: 100%;
+    text-align: center;
+  }
+  body#pcfopenspace .content .thirtywide .mktoForm {
+    margin: 0 auto !important;
+  }
+  body#pcfopenspace .content .thirtywide .mktoForm .mktoButtonRow,
+  body#pcfopenspace .content .thirtywide .mktoForm .mktoButtonWrap.mktoSimple {
+    text-align: center !important;
+    display: block;
+  }
+  body#pcfopenspace .content .thirtywide .mktoForm .mktoButtonWrap.mktoSimple {
+    margin-left: 0 !important;
+  }
+  body#pcfopenspace .content .thirtywide .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    float: none;
+  }
 }
 
 @media (max-width: 955px) {
@@ -1016,6 +1245,17 @@ body#agenda #stats {
   }
   #learnshare .sessioncard .headshottitle {
     text-align: left;
+  }
+  body#pcfopenspace #pcfopenspacebanner {
+    display: none;
+  }
+  body#pcfopenspace #logoh2 {
+    margin: 0 0 20px;
+    font-size: 50px;
+  }
+  body#pcfopenspace .pcflogosvg {
+    margin: 0 auto;
+    display: block;
   }
 
 }
@@ -1081,4 +1321,10 @@ body#agenda #stats {
     padding: 60px 20px;
   }
 
+}
+
+@media (max-width: 340px) {
+  .mktoForm input[type="text"], .mktoForm input[type="url"], .mktoForm input[type="email"], .mktoForm input[type="tel"], .mktoForm input[type="number"], .mktoForm input[type="date"], .mktoForm textarea.mktoField, .mktoForm select.mktoField {
+    width: 265px !important;
+  }
 }
