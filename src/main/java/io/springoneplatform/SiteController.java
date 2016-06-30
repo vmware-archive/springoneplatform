@@ -42,15 +42,21 @@ public class SiteController {
 		return "index";
 	}
 
+	@RequestMapping("/ignite")
+	public String ignite() {
+		return "redirect:https://2016.event.springoneplatform.io/schedule/sessions/ignite_springone_platform.html";
+	}
+
+	@RequestMapping("/openapi-workshop")
+	public String openapiworkshop() {
+		return "openapiworkshop";
+	}
+
 	@RequestMapping("/pcf-open-space")
 	public String pcfopenspace() {
 		return "pcfopenspace";
 	}
 
-	@RequestMapping("/pcf-open-space/confirmation")
-	public String pcfopenspaceconfirmation() {
-		return "pcfopenspaceconfirmation";
-	}
 
 	@RequestMapping("/register")
 	public String register() {
@@ -62,9 +68,29 @@ public class SiteController {
 		return "redirect:https://2016.event.springoneplatform.io/schedule/sessions";
 	}
 
+	@RequestMapping("/speaker-guidelines")
+	public String speakerguidelines() {
+		return "redirect:/speaker-guidelines/breakout";
+	}
+
+	@RequestMapping("/speaker-guidelines/breakout")
+	public String breakoutspeakerguidelines() {
+		return "breakoutspeakerguidelines";
+	}
+
+	@RequestMapping("/speaker-guidelines/main-stage")
+	public String mainstagespeakerguidelines() {
+		return "mainstagespeakerguidelines";
+	}
+
 	@RequestMapping("/submit")
 	public String submit() {
-		return "submit";
+		return "redirect:https://2016.event.springoneplatform.io/schedule/sessions";
+	}
+
+	@RequestMapping("/thank-you")
+	public String thankyou() {
+		return "thankyou";
 	}
 
 	@RequestMapping("/training")
