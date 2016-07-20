@@ -47,6 +47,11 @@ public class SiteController {
 		return "redirect:https://2016.event.springoneplatform.io/schedule/sessions/ignite_springone_platform.html";
 	}
 
+	@RequestMapping("/keynotes")
+	public String keynotes() {
+		return "keynotes";
+	}
+
 	@RequestMapping("/openapi-workshop")
 	public String openapiworkshop() {
 		return "openapiworkshop";

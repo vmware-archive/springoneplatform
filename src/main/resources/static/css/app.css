@@ -62,7 +62,7 @@ body {
       font-size: 17px;}
 
       #header #nav li a:hover {
-        color: #5fc6cd;
+        color: #00ae9e;
       }
       
       #header #nav li:last-child {
@@ -336,7 +336,7 @@ input {
   padding: 20px 0; }
   
   .content a {
-    color: #5fc6cd; }
+    color: #00ae9e; }
     
     .content a:hover {
       color: #428d92; }
@@ -876,6 +876,69 @@ input {
     max-width: 220px;
   }
 
+  #sponsors #kenzan {
+    padding: 40px;
+  }
+
+  #sponsors #mongodb {
+    padding: 50px 40px;
+    height: 63px;
+  }
+
+  #sponsors #enterprisedb {
+    height: 80px;
+    padding: 40px; 
+  }
+
+  #sponsors #apigee {
+    padding: 52px 40px;
+    height: 60px;
+  }
+
+  #sponsors #dzone {
+    height: 45px;
+  }
+
+  #sponsors #predix,
+  #sponsors #oreilly {
+    height: 40px;
+  }
+
+  #sponsors #perficient {
+    height: 60px;
+    padding: 50px 40px;
+  }
+
+  #sponsors #gemalto {
+    padding: 45px;
+    height: 65px;
+  }
+
+  #sponsors #atos {
+    height: 60px;
+    padding: 50px;
+  }
+
+  #sponsors #aws {
+    height: 70px;
+    padding: 45px;
+  }
+
+  #sponsors #newrelic {
+    height: 42px;
+  }
+
+  #sponsors #forgerock {
+    height: 50px;
+    padding: 50px 40px;
+  }
+
+  #sponsors #cognizant,
+  #sponsors #infoq {
+    height: 70px;
+    padding: 45px 40px;
+  }
+
 #footer {
   padding: 50px 0 80px;
   text-align: center; }
@@ -1034,7 +1097,7 @@ body#training #training-link,
 body#travel #travel-link,
 body#sessionspage #sessions-link,
 body#agenda #agenda-link {
-  color: #5fc6cd;}
+  color: #00ae9e;}
 
 body#speakers .content img {
   height: 240px;
@@ -1176,6 +1239,10 @@ body#pcfopenspace .pcflogosvg {
     height: 60px;
   }
 
+  body#openapiworkshop #openapilogos {
+    margin: 0 0 30px 0;
+  }
+
   body#pcfopenspace #logoh2 {
     margin: 60px 0 10px;
     font-size: 72px;
@@ -1301,6 +1368,55 @@ body#pcfopenspace .pcflogosvg {
   vertical-align: top;
 }
 
+.twentyfourwide {
+  width: 24%;
+  display: inline-block;
+  vertical-align: top;  
+}
+
+.seventyfivewide {
+  width: 75%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.headshotcircle {
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+.keynotist {
+  margin-bottom: 40px;
+}
+
+.keynotist h3 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.keynotist .titlecompany {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.companyname {
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+
+.dateandtime {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.purpleunderline {
+  border-bottom: 1px solid #31256a;
+}
+
+.mrttenbthirty {
+  margin: 10px 0 30px 0;
+}
+
 @media(max-width: 1055px) {
   #intro {
     max-width: 100%;
@@ -1336,11 +1452,12 @@ body#pcfopenspace .pcflogosvg {
 
 @media  (max-width: 981px) {
   body#pcfopenspace .content .sixtywide,
-  body#pcfopenspace .content .thirtywide,
-  body#openapiworkshop .content .sixtywide,
-  body#openapiworkshop .content .thirtywide {
+  body#pcfopenspace .content .thirtywide {
     width: 100%;
     text-align: center;
+  }
+  body#openapiworkshop .content .sixtywide {
+    width: 100%;
   }
   body#pcfopenspace .content .thirtywide .mktoForm,
   body#openapiworkshop .content .thirtywide .mktoForm {
@@ -1377,6 +1494,11 @@ body#pcfopenspace .pcflogosvg {
   #slideshow .cta {
     display: block;
     margin: 0 auto;
+  }
+
+  .twentyfourwide {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -1502,5 +1624,8 @@ body#pcfopenspace .pcflogosvg {
   #sponsors .sponsor img {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+  .seventyfivewide {
+    width: 100%;
   }
 }
