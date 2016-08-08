@@ -44,6 +44,11 @@ $(document).ready(function() {
     effect : "fadeIn"
   });
 
+  $('.navbar-toggle').click(function (){
+  	$(this).toggleClass('collapsed');
+  	$('.nav-bar').toggleClass('collapse in autoheight');
+  });
+
   //Match div height
   $(function() {
       $(".match").matchHeight();

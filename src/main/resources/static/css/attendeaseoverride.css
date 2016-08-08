@@ -1,0 +1,2866 @@
+/* General */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,500);
+
+@font-face {
+  font-family:'Proxima Nova';
+  font-style:normal;
+  font-weight:300;
+  font-weight:200;
+  font-weight:100;
+  src:url(https://d1fto35gcfffzn.cloudfront.net/fonts/ProximaNovaLight.woff) format('woff'),
+  url(https://d1fto35gcfffzn.cloudfront.net/fonts/ProximaNova-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family:'Proxima Nova';
+  font-weight:normal;
+  font-style:normal;
+  src:url(https://d1fto35gcfffzn.cloudfront.net/fonts/ProximaNovaReg.woff) format('woff'),
+  url(https://d1fto35gcfffzn.cloudfront.net/fonts/ProximaNova-Reg.ttf) format('truetype');
+}
+@font-face {
+  font-family:'Proxima Nova';
+  font-weight:500;
+  font-style:normal;
+  src:url(https://d1fto35gcfffzn.cloudfront.net/fonts/ProximaNovaBold.woff) format('woff'),
+  url(https://d1fto35gcfffzn.cloudfront.net/fonts/ProximaNova-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family:'Proxima Nova';
+  font-weight:600;
+  font-style:normal;
+  src:url(https://d1fto35gcfffzn.cloudfront.net/fonts/ProximaNovaXbold.woff) format('woff'),
+  url(https://d1fto35gcfffzn.cloudfront.net/fonts/ProximaNova-Xbold.ttf) format('truetype');
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  background: url(https://d1ophd2rlqbanb.cloudfront.net/bg-triangles-shaded.png) no-repeat top center #101128;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
+
+#fixedwidthcontainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: url(https://d1ophd2rlqbanb.cloudfront.net/bg-triangles-shaded.png) no-repeat top center #101128;
+}
+
+p {
+  margin: 20px 0;
+}
+
+
+.content li {
+  margin:10px 0;
+}
+
+a {
+  color: #00ae9e;
+  /*color: #5fc6cd;*/
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  -ms-transition: all .2s;
+}
+
+a:hover, a:focus {
+  color: #428d92;
+}
+
+.content {
+  margin-top: 20px !important;
+}
+
+th {
+  font-weight: 300;
+}
+
+b, strong {
+    font-weight: 500 !important;
+}
+
+.attendease-registration-code-info strong {
+  font-weight: 500 !important;
+}
+
+/* Schedule */
+
+.breakbar {
+  background: #31256a;
+  text-transform: uppercase;
+  padding: 5px 15px 15px 25px;
+  margin: 0 0 5px 0;
+  min-height: inherit !important;
+}
+
+.breakbar h3 {
+  font-size: 28px;
+  letter-spacing: 0.025em;
+}
+
+.breakbar .time {
+  color: #00a1e4;
+}
+
+.breakbar a {
+  color: white;
+}
+
+.breakbar a:hover {
+  text-decoration: underline;
+}
+
+.transhover {
+  display: block;
+  color: white;
+}
+
+.transhover:hover {
+  background: rgba(49,37,106, 0.5);
+  color: white;
+  
+}
+
+.sessionbreakbar {
+  width: 100% !important;
+  max-width: 974px !important;
+  border: none !important;
+  height: inherit !important;
+  padding: 5px 0 15px 25px !important;
+  margin: 0 0 5px 0 !important;
+  float: left;
+}
+
+.sessionbreakbar h3 {
+  margin-left: 0;
+}
+
+.sessionbreakbar h3,
+.sessionbreakbar img,
+.sessionbreakbar h2 {
+  display: inline-block;
+  /*vertical-align: middle;*/
+}
+
+.sessionbreakbar img {
+  /*margin-top: -15px;*/
+  height: 33px;
+}
+
+.sessionbreakbar a {
+  font-size: 28px !important;
+  letter-spacing: 0.025em !important;
+  font-weight: 400 !important;
+  /*margin-left: 102px;*/
+  margin-left: 0;
+}
+
+.sessionbreakbar a:hover {
+  /*text-decoration: none !important;*/
+  /*cursor: default;*/
+}
+
+.presentationbar {
+  /*padding: 10px 13px 15px 12px !important;*/
+}
+
+.presentationbar img {
+  margin-top: 0px;
+}
+
+.presentationbar h3 {
+  margin-left: 0;
+}
+
+.presentationbar .time {
+  margin-left: 0;
+}
+
+.lastbreakbar {
+  margin: 0 20px 20px 0 !important;
+}
+
+.knifeforkicon {
+  margin: 0 11px 0 15px;
+}
+
+.eleventhirtytotwelvefortysessions {
+  float: left;
+  width: 100%;
+}
+
+.timeslot {
+  display: inline-block;
+  width: 33.33%;
+}
+
+.eleventhirtytotwelvefortysessions .timeslot:nth-child(2) {
+ text-align: center;
+}
+
+.timeslot:last-child {
+  text-align: right;
+}
+
+.halfhoursession {
+  width: 48.95% !important;
+}
+
+.halfhoursession p {
+  margin: 0;
+}
+
+.eleventhirtytotwelvefortysessions,
+.twotothreefiftysessions,
+.fourtosixtensessions,
+.ninetotenfortysessions,
+.elevententotwelvefifteensessions {
+  position: relative;
+  z-index: -100;
+}
+
+.eleventhirtytotwelvefortysessions .halfhoursession,
+.twotothreefiftysessions .halfhoursession,
+.fourtosixtensessions .halfhoursession,
+.ninetotenfortysessions .halfhoursession,
+.elevententotwelvefifteensessions .halfhoursession {
+  display: inline-block;
+  margin: 20px 0;  
+  width: 49.4% !important;
+}
+
+.twotothreefiftysessions .halfhoursession,
+.fourtosixtensessions .halfhoursession,
+.ninetotenfortysessions .halfhoursession,
+.thirdhoursession {
+  width: 32.5% !important;
+}
+
+.hourtensession,
+.hourfivesession {
+  width: 65.4% !important;
+}
+
+.eleventhirtytotwelvefortysessions .halfhoursession:first-child,
+.ninetotenfortysessions .halfhoursession:first-child,
+.twotothreefiftysessions .halfhoursession:first-child,
+.elevententotwelvefifteensessions .halfhoursession:first-child,
+.twotothreefiftysessions .halfhoursession:nth-child(2),
+.fourtosixtensessions .halfhoursession:first-child,
+.fourtosixtensessions .halfhoursession:nth-child(2),
+.ninetotenfortysessions .halfhoursession:nth-child(2) {
+  margin-right: 12px;
+}
+
+.timeline {
+  position: absolute;
+  margin-top: -20px;
+  /*border-left: 1px dashed #999;*/
+  width: 2px;
+  background: #31256a;
+  /*border-left: 1px solid #31256a;*/
+  /*border-right: 1px solid #31256a;*/
+}
+
+.noontues,
+.eleventhirtytues,
+.twelvefortytues,
+.noonwed,
+.elevenfortythurs {
+  height: 1400px;
+  left: 498px;
+}
+
+.noonwed,
+.eleventhirtywed,
+.twelvefortywed {
+  height: 1500px;
+}
+
+.twothirtytues,
+.twotues,
+.threefiftytues,
+.fourtwentytues,
+.sixtentues,
+.twothirtywed,
+.fourfiftywed,
+.twowed,
+.threefiftywed {
+  height: 1740px;
+  left: 334px;
+}
+
+.threetentues,
+.threetenwed,
+.fivethirtywed {
+  height: 1740px;
+  left: 663px;
+}
+
+
+
+
+.twothirtytues,
+.twotues,
+.threetentues,
+.threefiftytues {
+  height: 1620px;
+}
+
+.twothirtytues,
+.threetentues,
+.fourtwentytues,
+.sixtentues {
+  height: 1700px;
+}
+
+.twowed,
+.threefiftywed {
+  height: 1770px;
+}
+
+.eleventhirtytues,
+.twotues,
+.fourtwentytues,
+.eleventhirtywed,
+.twowed,
+.fourtwentywed,
+.elevententhurs {
+  left: 0;
+}
+
+.twelvefortytues,
+.threefiftytues,
+.sixtentues,
+.twelvefortywed,
+.threefiftywed,
+.sixtenwed,
+.twelvefifteenthurs {
+  left: 997px;
+}
+
+.twothirtywed,
+.threetenwed {
+  height: 1770px;
+}
+
+[data-date="2016-08-04"] .twowed,
+[data-date="2016-08-04"] .threefiftywed,
+[data-date="2016-08-04"] .twothirtywed,
+[data-date="2016-08-04"] .threetenwed {
+  height: 1570px;
+}
+
+.fourfiftywed,
+.fivethirtywed,
+.fourtwentywed,
+.sixtenwed {
+  height: 1770px;
+}
+
+.elevententhurs,
+.elevenfortythurs,
+.twelvefifteenthurs {
+  height: 1450px;
+}
+
+.noontues, .eleventhirtytues, .twelvefortytues {
+  height: 1350px;
+}
+
+.mrzero {
+  margin-right: 0 !important;
+}
+
+.mrhundred {
+  margin-right: 100px !important;
+}
+
+.prfive {
+  padding-right: 5px;
+}
+
+.prthree {
+  padding-right: 3px;
+}
+
+.prfour {
+  padding-right: 4px;
+}
+
+.mlnfive {
+  margin-left: -5px !important;
+}
+
+.mrlnthree {
+  margin-left: -3px !important;
+}
+
+.mrnfive {
+  margin-right: -5px !important;
+}
+
+.plthree {
+  padding-left: 3px;
+}
+
+.plfour {
+  padding-left: 4px;
+}
+
+.plfive {
+  padding-left: 5px;
+}
+
+.plten {
+  padding-left: 10px !important;
+}
+
+.mrlten {
+  margin-left: 10px !important;
+}
+
+.floatright {
+  float: right !important;
+}
+
+.floatleft {
+  float: left;
+}
+
+.selectedsession {
+  max-width: 232px !important;
+  height: 250px !important;
+  margin: 0 12px 12px 0 !important;
+  float: left !important;
+}
+
+.middlechild {
+  /*margin: 0 12px !important;*/
+  width: 31.3% !important;
+}
+
+.morningsession,
+.afternoonsession,
+.eveningsession {
+  background: rgba(16,17,40,0.6);
+}
+
+#days-ul {
+  max-width: 70%;
+  float: left;
+}
+
+.attendease-session .attendease-instances [data-instance-id="5784298c4be5dd786700c012"],
+.attendease-session .attendease-instances [data-instance-id="57842b524be5dd786700c26b"],
+.attendease-session .attendease-instances [data-instance-id="57842b654be5ddaac7014261"],
+.attendease-session .attendease-instances [data-instance-id="578430d04be5dd81ed000253"],
+.attendease-session .attendease-instances [data-instance-id="578a6b714be5dda8e4001026"],
+.attendease-session .attendease-instances [data-instance-id="578d3c754be5dd1cc00034f5"],
+.attendease-session .attendease-instances [data-instance-id="578a8b9b4be5dda8e4004c7b"],
+.attendease-session .attendease-instances [data-instance-id="578810ca4be5dd2759003567"],
+.attendease-session .attendease-instances [data-instance-id="57842d074be5dd786700c41b"],
+.attendease-session .attendease-instances [data-instance-id="57842cf54be5ddaac70143c8"] {
+  display: none;
+}
+
+.attendease-pay-outstanding-balance .attendease-button {
+  background-color: #00ae9e;
+}
+
+.attendease-pay-outstanding-balance .attendease-button:hover {
+  background: #22c6b2;
+}
+
+
+
+/*#schedule-bar {
+  border: 1px solid #333333;
+  width: 99%;
+}
+
+#days-ul li > a {
+  padding:10px;
+}
+
+.doughnut {
+  background-image: url(https://pivotalcontent.wpengine.com/springone2014/images/schedule-good-eats.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.coffee {
+  background-image: url(https://pivotalcontent.wpengine.com/springone2014/images/schedule-coffee-break.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}*/
+
+/*.breakbar {
+  width: 99% !important;
+  height: 45px !important;
+  background: #666666 !important;
+  color: white !important;
+  padding: 10px 20px !important;
+}
+
+.restrict-height {
+  height: 60px;
+}
+
+#schedule-bar .nav-separator {
+  color: white;
+  padding: 11px 0;
+  font-size: 11px;
+  font-weight: 200;
+}
+
+#black-bar {
+  background:#333333;
+  height: 40px;
+  margin-bottom: -40px;
+}
+
+#schedule-day {
+  background: url(https://pivotalcontent.wpengine.com/springone2014/images/schedule-monday.png) no-repeat;
+  height: 87px;
+  width: 100px;
+  margin: 0 26px;
+  display: inline-block;
+}
+
+#days-ul {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 200;
+  width: 70%;
+}
+
+#nav-schedule-tracks {
+  margin: -32px 10px 20px 162px;
+  font-size: 13px;
+}*/
+
+/*.active {
+  color: #333333;
+  text-decoration: none;
+}
+
+#nav-schedule-tracks .nav-separator {
+  color: #333333 !important;
+  padding: 5px 0;
+}
+*/
+/*.container .attendease-navigation #schedule-bar #nav-schedule-tracks li > a {
+  padding: 0 10px;
+  border:none;
+  border-right: 1px solid #333333;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container .attendease-navigation #schedule-bar #nav-schedule-tracks li:first-child > a {
+  padding-left: 4px;
+}
+
+.container .attendease-navigation #schedule-bar #nav-schedule-tracks li:last-child > a {
+  border-right: none;
+}
+
+.container .attendease-navigation #schedule-bar #nav-schedule-tracks li > a:hover {
+  color: #7b48fe !important;
+  text-decoration: underline;
+}*/
+
+/*.dash {
+  display: inline-block;
+  background: #333333;
+  height: 1px;
+  width: 10px;
+  margin: 5px 0 5px 0;
+}
+
+.schedule-marker {
+  float: left;
+  background-color: #333333;
+  height: 100%;
+  width: 150px;
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+  position: absolute;
+}
+
+.schedule-marker:hover {
+  cursor: pointer;
+}
+
+.track-header {
+  min-height: 60px;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.track-header p {
+  margin:0;
+}*/
+
+/*.box-padding {
+  padding: 10px; 
+}*/
+
+/*.placeholder {
+  background:#666666;
+}
+
+.big-data {
+  background: #01786e;
+}
+
+.web-js {
+  background: #da6666;
+}
+
+.data-integration {
+  background: #e2a12f;
+}
+
+.core-spring {
+  background: #7b48fe;
+}
+
+.applied-spring {
+  background: #40ad64;
+}
+
+.dev-cloud {
+  background: #4daca9;
+}
+
+.core-groovy {
+  background: #3f81b3;
+}
+
+.essential-grails {
+  background: #546c9f;
+}
+
+.more-groovy {
+  background: #7d4e80;
+}
+
+.g-g-special {
+  background: #8f8849;
+}*/
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* Navigation */
+
+
+
+/*#navigation-logo {
+  background: url(https://pivotalcontent.wpengine.com/springone2014/images/nav-logo.png) no-repeat;
+  position: fixed;
+  width: 185px;
+  height: 157px;
+  margin-top: -1px !important;
+  cursor: pointer;
+  margin-left: -95px !important;
+  top: 0;
+  left: 50%;
+}*/
+
+#navigation {
+  /*border-bottom: 1px solid #ddd;*/
+  /*box-shadow: 0 1px 5px #ddd;*/
+/*  background: url(https://geodesummit.s3.amazonaws.com/images/bg-header.png) no-repeat center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*background: white;*/
+}
+
+#navigation {
+  background-color: transparent;
+  padding: 45px 0;
+}
+
+#logosmall {
+  /*width: 273px;*/
+  height: 44px;
+}
+
+#nav a:hover {
+  color: #428d92;
+}
+
+#nav li:after {
+    content: "";
+    /*margin: 0 10px;*/
+    color: white;
+}
+
+#nav li:last-child:after {
+  content: "";
+  margin: 0;
+}
+
+#navigation .logo {
+  float: left;
+  margin: 35px 20px 20px 0;
+}
+
+#navigation .logo img {
+  max-height: 70px;
+}
+
+#navigation ul {
+  padding: 0;
+  float: right;
+  margin: 0;
+}
+
+#navigation #desktop-only li {
+  display: inline-block;
+  /*margin: 0 7px;*/
+  /*font-weight: 600;*/
+  /*font-size: 15px;*/
+/*  font-size: 17px;
+  font-weight: 200;
+  text-transform: uppercase;*/
+  padding: 11px 0;
+  margin: 0 8px;
+}
+
+#navigation #desktop-only li:last-child {
+  margin: 0 0 0 8px;
+}
+
+#navigation #desktop-only li a {
+  color: white;
+  font-size: 17px;
+}
+
+#navigation #desktop-only li a:hover {
+  color: #00ae9e;
+}
+
+#navigation #desktop-only li.nav-register {
+  /*margin: 0 0 0 30px;*/
+}
+
+/*#navigation #desktop-only li.nav-register a {
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  color: #1e90ff;
+  background: white;
+}
+
+#navigation #desktop-only li.nav-register a:hover {
+  background: #1e90ff;
+  color: white;
+}*/
+
+/*#desktop-only #nav-schedule {
+  margin: 0 10px 0 20px !important;
+}*/
+
+/*#desktop-only #nav-travel {
+  padding-right: 100px !important;
+}
+
+#desktop-only #nav-contact {
+  padding-left: 100px !important;
+}*/
+
+
+/* Footer */
+
+/*#footer-green-v {
+  background: url(https://pivotalcontent.wpengine.com/springone2014/images/bottom-bg-plain.png) no-repeat top center;
+  height: 996px;
+  width: 100%;
+  margin-top: 0;
+  position: relative;
+}*/
+
+.nav > li > a, .attendease-navigation ul > li > a {
+  padding: 0 15px;
+}
+
+footer {
+    font-size: 16px;
+    margin-top: 80px;
+    padding: 50px 0 80px;
+    text-align: center;
+    color: white;
+/*  text-align: center;
+  min-height: 320px;
+  padding: 30px 20px;*/
+}
+
+footer h4 {
+  margin: 30px 0;
+  font-size: 22px;
+  line-height: 1.4em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*footer ul {
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 17px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+footer img {
+  margin: 0 0 25px;
+}*/
+
+footer a {
+  margin: 0;
+}
+
+footer a:hover {
+  color: #428d92;
+}
+
+/*footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 13px;
+  font-weight: 300;
+  margin-top: 30px;
+}*/
+
+#copyright {
+  float: left;
+  text-align: left;
+}
+#socialicons {
+  float: right;
+  margin: 20px 0;
+}
+#socialicons .fa {
+  font-size: 30px;
+}
+
+/* Training */
+/*
+.training-title {
+  cursor: pointer;
+}
+
+.training-title {
+  text-decoration: underline;
+}
+
+.training-description {
+  display: none;
+}
+
+*/
+
+/* General attendease overrides */
+
+.attendease-credit-card-types-clause, .attendease-confirmation-notice {
+  margin-top: 20px;
+}
+
+h4.attendease-payment-policy-header, h4.attendease-cancellation-policy-header {
+  font-weight: 500;
+}
+
+  .attendease-presenters .attendease-presenter .attendease-presenter-name {
+    margin-left: 0;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .attendease-presenters img {
+    height: 240px;
+    float: left;
+    width: 240px;
+  }
+
+.attendease-session-meta .attendease-presenters .attendease-presenter .attendease-presenter-name {
+  display: block;
+}
+
+.attendease-session-meta .attendease-presenters #firstspeakerspacer {
+  display: none;
+}
+
+.attendease-session .attendease-session-meta .attendease-presenter {
+  float: none;
+  min-height: 80px;
+}
+
+.attendease-session .attendease-session-meta .attendease-presenter .attendease-presenter-profile-image {
+  width: 240px;
+  opacity: 0.8;
+}
+
+.attendease-session .attendease-session-meta .attendease-presenter .attendease-presenter-profile-image img {
+  width: 240px;
+  height: 240px;
+  border-radius: 0;
+}
+
+.attendease-session .attendease-session-meta .attendease-presenter .attendease-presenter-name {
+  top: 10px;
+  left: 10px;
+  margin-left: 0;
+}
+
+.attendease-session .attendease-session-meta .attendease-presenter .attendease-presenter-title {
+  bottom: 30px;
+  left: 10px;
+  margin-left: 0;
+
+}
+
+.attendease-session .attendease-session-meta .attendease-presenter .attendease-presenter-company {
+  bottom: 10px;
+  left: 10px; 
+  margin-left: 0;
+
+}
+
+.attendease-session .attendease-session-meta .attendease-presenter {
+  overflow: hidden;
+}
+
+.attendease-session .attendease-name-and-description {
+  width: 60%;
+}
+
+.attendease-session .attendease-meta-item h2 {
+  -webkit-font-smoothing: antialiased;
+}
+
+.attendease-presenters .attendease-header:before {
+  content: "Speakers";
+  font-size: 48px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.attendease-schedule .attendease-session-and-instance:first-child:before {
+  /*content: "Agenda";*/
+  /*font-size: 48px;*/
+  /*-webkit-font-smoothing: antialiased;*/
+}
+
+.attendease-schedule [data-session-id="57647e624be5dd18460053a4"] .attendease-name p a {
+  color: #00ae9e;
+}
+
+.attendease-schedule [data-session-id="57647e624be5dd18460053a4"] .attendease-name p a:hover {
+  color: white;
+}
+
+.day {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 26px;
+  /*max-width: 250px;*/
+}
+
+.agendatitle {
+  margin: 44px 0 27px;
+}
+
+.day h3 {
+  margin-top: 10px;
+}
+
+.day:last-child {
+  margin-right: 0;
+}
+
+.day .bold {
+  font-weight: 500;
+}
+
+.day .white {
+  margin: 1em 0 0 0;
+}
+
+.day .lightgrey {
+  color: #a7a9ac;
+}
+
+.day .peach {
+  color: #e38863;
+}
+
+.day .blue,
+#days-ul .blue {
+  color: #00a1e4;
+}
+
+.day .purple {
+  color: #7b6fa7;
+}
+
+.day .green {
+  color: #099846;
+}
+
+.day .sizeeighteen {
+  font-size: 18px;
+}
+
+.mbtwenty {
+  margin-bottom: 20px  !important;
+}
+
+.attendease-navigation ul > li > a:focus {
+  background-color: transparent;
+}
+
+a:focus {
+  outline: none;
+}
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+h1 {
+  margin: 44px 0;
+  font-size: 45px;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+}
+
+h4 {
+  font-weight: 300;
+}
+
+h5 {
+    font-size: 14px;
+    margin: 5px 0 0;
+    font-weight: 300;
+}
+
+.attendease-presenters .attendease-presenter {
+/*  max-width: 11.1%;
+  margin-right: 0;
+  margin-bottom: 0;*/
+  height: 240px;
+  /*min-width: 103px;*/
+  margin-top: 0;
+  width: 240px;
+  margin-right: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.attendease-presenters .attendease-presenter:nth-child(odd) {
+  margin-right: 0;
+}
+
+.attendease-presenters .attendease-header {
+  margin: 25px 0 50px;
+}
+
+.attendease-group label {
+  width: 200px;
+  padding: 10px 0 0;
+  color: white;
+}
+
+.attendease-group.attendease-required > label {
+  color: white;
+}
+
+.attendease-credit-card-payment-clause {
+  margin-top: 20px;
+}
+
+.attendease-payment-policy,
+.attendease-cancellation-policy {
+  margin: 20px 0;
+}
+
+h4.attendease-payment-policy-header, h4.attendease-cancellation-policy-header {
+  margin-top: 10px;
+}
+
+#like-widget {
+  display: none;
+}
+
+#social .ical img, #social .twitter-tweet img, #social .facebook-like img {
+  border-radius: 5px;
+}
+
+/*.attendease-presenters .attendease-presenter .attendease-presenter-title {
+  display: none;
+}*/
+
+.attendease-sessions .attendease-session-name {
+  max-width: 600px;
+  padding: 0;
+}
+
+.attendease-sessions .attendease-session-name h3 {
+  font-size: 18px;
+  font-family: "Proxima Nova", sans-serif;
+  margin: 0 10px 10px 10px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.attendease-sessions .attendease-session-name h3 a {
+  color: white;
+  font-weight: 500;
+}
+
+.attendease-sessions .attendease-session-name h3 a:hover {
+  text-decoration: underline;
+}
+
+.attendease-attendee .attendease-attendee-profile-image img {
+  border-radius: 0;
+}
+
+.attendease-presenters .attendease-presenter .attendease-presenter-profile-image img {
+  width: 240px;
+  border-radius: 0;
+}
+
+.attendease-session .attendease-presenter .attendease-presenter-profile-image img {
+  border-radius: 50px;
+}
+
+.container .attendease-schedule .schedule-action-position {
+  bottom: 5px;
+  position: absolute;
+  left: 10px;
+}
+
+.attendease-presenter-profile .attendease-schedule .schedule-action-position,
+.attendease-session .attendease-schedule .schedule-action-position {
+  position: relative;
+  left: 0;
+}
+
+.attendease-presenter-profile .attendease-instance-location-room,
+.attendease-session .attendease-instance-location-room {
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.attendease-schedule-action .attendease-button,
+.attendease-status-available .attendease-button,
+.attendease-schedule-action .attendease-button:hover,
+.attendease-status-available .attendease-button:hover,
+.attendease-schedule-action .attendease-button-alert:hover,
+.attendease-schedule-action input[type=submit],
+.attendease-schedule-action input[type=submit]:hover  {
+  padding: 0;
+  color: #333333 !important;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.attendease-schedule-action .attendease-button:hover,
+.attendease-schedule-action input[type=submit]:hover {
+  color: #7b48fe !important;
+}
+
+.attendease-schedule .attendease-schedule-status {
+  padding: 1px;
+  margin-left: 0;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+}
+
+.attendease-attendee-schedule .attendease-status-scheduled .attendease-schedule-status {
+  /*margin: -10px 0 0 10px;*/
+  display: none !important;
+}
+
+.attendease-attendee-schedule .attendease-day:first-child,
+.attendease-attendee-schedule .attendease-day:nth-child(2),
+.attendease-attendee-schedule .attendease-day:nth-child(3) {
+  display: none;
+}
+
+.attendease-attendee-schedule .attendease-day .attendease-alert {
+  color: #58595b;
+}
+
+.attendease-attendee-schedule .attendease-schedule .attendease-day {
+  max-width: 60%;
+  overflow: hidden;
+}
+
+.attendease-attendee-schedule .attendease-schedule .attendease-day .session-tags {
+  display: none;
+}
+
+/*.attendease-attendee-schedule .attendease-schedule .attendease-session-and-instance {
+  margin: 10px 0 !important;
+}*/
+
+.attendease-schedule-action input[type=submit] {
+  margin-left: 25px;
+}
+
+.attendease-attendee-schedule .attendease-schedule-action input[type=submit] {
+  margin-left: 0;
+  color: #00ae9e !important;
+  margin-bottom: 0;
+}
+
+.attendease-attendee-schedule .attendease-schedule-action input[type=submit]:hover {
+  color: white !important;
+}
+
+.attendease-instance-detail .attendease-status-conflicts,
+.attendease-instance-detail .attendease-status-full .glyphicon {
+  display: none;
+}
+
+.attendease-presenters .attendease-presenter .attendease-presenter-company {
+  /*font-size: 14px;*/
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  /*color: rgba(255,255,255,0.4);*/
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  /*font-weight: 400;*/
+  margin-left: 0;
+  font-size: 15px;
+}
+
+.attendease-presenter-profile .attendease-presenter .attendease-presenter-company {
+  /*font-size: 14px;*/
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  /*color: rgba(255,255,255,0.4);*/
+  /*position: absolute;*/
+  /*bottom: 10px;*/
+  /*left: 20px;*/
+  font-weight: 400;
+  margin-left: 0;
+}
+
+.attendease-presenters .attendease-presenter .attendease-presenter-title {
+  font-size: 16px;
+  /*text-transform: uppercase;*/
+  color: white;
+  position: absolute;
+  bottom: 28px;
+  left: 20px;
+  margin-left: 0;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+.attendease-presenter-profile .attendease-presenter .attendease-presenter-bio {
+  max-width: 600px;
+}
+
+.attendease-presenter-profile .attendease-presenter .attendease-presenter-profile-image img {
+  border-radius: 50%;
+}
+
+.attendease-presenter-profile .attendease-sessions h2 {
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+}
+
+.attendease-presenter-profile .attendease-presenter .attendease-presenter-title {
+  font-size: 20px;
+}
+
+
+/*.attendease-schedule-action:before {
+  content: "+ ";
+}
+*/
+
+
+.nav-tabs, .attendease-navigation ul {
+/*  border-bottom: none;*/
+}
+
+.attendease-navigation ul {
+  border-bottom: none;
+}
+
+.attendease-navigation .attendease-dates {
+  display: none;
+}
+
+.container .attendease-navigation #days-ul li > a:hover {
+  color: white;
+}
+
+.attendease-navigation ul > li > a:hover {
+  background-color: transparent;
+}
+
+.attendease-account .attendease-navigation ul,
+.attendease-attendee-schedule .attendease-navigation ul,
+.attendease-order .attendease-navigation ul {
+  border-bottom: 1px solid #ccc;
+}
+
+.attendease-account .attendease-navigation,
+.attendease-order .attendease-navigation,
+.attendease-attendee-schedule .attendease-navigation {
+  margin: 40px 0;
+}
+
+.nofilterschedulebar {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+#schedule-bar ul > li > a {
+  border:none;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+}
+
+#schedule-bar td {
+  vertical-align: middle;
+}
+
+#schedule-bar td:first-child,
+.breakbar td:first-child {
+  width: 50px;
+  text-align: center;
+}
+
+#schedule-bar td:nth-child(2),
+.breakbar td:nth-child(2),
+.sessionbreakbar td:nth-child(2) {
+  width: 20px;
+}
+
+#schedule-bar td:nth-child(3) {
+  /*width: 190px;*/
+}
+
+#schedule-bar td:nth-child(4) {
+  /*width: 100px;*/
+}
+
+.mlsix {
+  margin-left: 6px;
+}
+
+.container .attendease-navigation #days-ul li > a:hover {
+  color: #00a1e4;
+}
+
+#schedule-bar ul > li > a:hover .day-icon {
+  background-image: url(https://d1ophd2rlqbanb.cloudfront.net/icon-day-blue.svg);
+}
+
+#schedule-bar li {
+  text-align: center;
+}
+
+#schedule-bar img {
+  height: 35px;
+}
+
+
+
+
+.firstbreak img,
+.lunch img,
+.secondbreak img {
+  margin-left: 5px;
+  height: 33px;
+}
+
+.day-icon {
+  width: 35px;
+  height: 35px;
+  background-image: url(https://d1ophd2rlqbanb.cloudfront.net/icon-days-01.svg);
+  margin: 0 auto;
+}
+
+.day-icon-blue {
+  background-image: url(https://d1ophd2rlqbanb.cloudfront.net/icon-day-blue.svg);
+}
+
+.attendease-schedule .attendease-date {
+  margin-left: 0;
+  background: transparent;
+  padding: 0;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.attendease-schedule .attendease-times-heading {
+  margin-bottom: 0;
+}
+
+.attendease-sessions .attendease-instance h3.attendease-date,
+.attendease-presenter-profile .attendease-sessions .attendease-instance-details {
+  display: none;
+}
+
+.attendease-group .attendease-help-block {
+  margin-top: 10px;
+}
+
+.attendease-group input:focus, .attendease-group textarea:focus, .attendease-group select:focus {
+  border-color: #7b48fe;
+  box-shadow: none;
+}
+
+.attendease-group input, .attendease-group textarea, .attendease-group select {
+  box-shadow: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  padding: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  color: black;
+}
+
+.attendease-group input, .attendease-group textarea {
+  width: 280px;
+}
+
+.attendease-choose-pass-table .attendease-group input {
+  width: inherit;
+}
+
+#bookaroom {
+  border: 1px solid white;
+    padding: 10px 30px;
+    margin: 30px 0;
+}
+
+#bookaroom h2 {
+  margin-bottom: 0;
+  font-size: 23px;
+}
+
+.attendease-forgot-password-form .attendease-group label {
+  width: 40px;
+}
+
+.attendease-password-reset .attendease-group label {
+  width: 75px;
+}
+
+.attendease-pass-description {
+  padding-left: 30px;
+  font-size: 14px;
+  color: #ccc;
+  font-style: italic;
+}
+
+.attendease-group select {
+  width: 280px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(https://d1fto35gcfffzn.cloudfront.net/images/icons/icon-angledown-999.png) no-repeat #fff right 10px center;
+}
+
+.attendease-group .attendease-fields select {
+    height: 24px;
+}
+
+table.attendease-table tbody tr, table.attendease-table thead tr {
+  border-bottom: none;
+}
+
+/*.attendease-choose-pass-table [id*='56e32a944be5dd3e24001d73'] {
+  border-bottom: 1px dotted #d9d9d9;
+}*/
+
+.attendease-choose-pass-table [id*='56e32a944be5dd3e24001d73'] td {
+  padding: 16px 12px 30px 0;
+}
+
+.attendease-choose-pass-table [id*='56e73e794be5dd3f7d0194e4'] td {
+  padding: 30px 12px 12px 0;
+}
+
+.attendease-alert-success {
+  background-color: transparent;
+  background-image: none;
+  background-image: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border: 2px solid white;
+}
+
+.attendease-filters .attendease-filter .attendease-filter-item {
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  margin-left: 0;
+  padding: 5px 15px 2px;
+  /*border: 2px solid transparent;*/
+}
+
+.attendease-filters .attendease-filter {
+  /*display: none;*/
+}
+
+.speakers .attendease-filters .attendease-filter .attendease-filter-name {
+  font-size: 32px;
+  margin-bottom: 16px;
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased;
+}
+
+.sessionsh1 {
+  margin: 44px 0 24px;
+}
+
+.sessionfilters {
+  /*display: none;*/
+  margin-bottom: 10px;
+}
+
+.sessionfilters .attendease-filter-name,
+.filter-toggle {
+  float: left;   
+  margin: 3px 10px 0 0;
+  cursor: pointer;
+  color: #00ae9e;
+}
+
+.filter-toggle {
+  float: right;
+  margin-top: 43px;
+}
+
+.sessionfilters .attendease-filter-name:hover {
+  color: #428d92;
+}
+
+.filter-toggle:hover {
+  color: white;
+}
+
+.sessionfilters .attendease-filter-item {
+  padding: 3px 15px 1px;
+  cursor: pointer;
+  border: 2px solid #101128;
+}
+
+.sessionfilters .inactive {
+  background-color: transparent !important;
+  border: 2px solid #555;
+  background: none;
+}
+
+.sessionfilters .attendease-filters .attendease-filter .attendease-filter-item {
+  font-size: 12px;
+}
+
+.sessionfilters .attendease-filter-items {
+  display: none;
+}
+
+.agendasessionfilters .attendease-filter-items {
+  margin-top: 20px;
+}
+
+.session-tag {
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  padding: 1px 10px 1px;
+  font-size: 12px;
+  margin: 5px 0 0 5px;
+  float: right;
+}
+
+.session-tags {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;  
+}
+
+.forestspringgradient {
+  background: #007460; /* Old browsers */
+  background: -moz-linear-gradient(left,  #007460 0%, #75bb4c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #007460 0%,#75bb4c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #007460 0%,#75bb4c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007460', endColorstr='#75bb4c',GradientType=1 ); /* IE6-9 */
+}
+
+.bluespringgradient {
+  background: #00a0db; /* Old browsers */
+  background: -moz-linear-gradient(left,  #00a0db 0%, #76bc4f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #00a0db 0%,#76bc4f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #00a0db 0%,#76bc4f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a0db', endColorstr='#76bc4f',GradientType=1 ); /* IE6-9 */
+}
+
+.darkblueaquagradient {
+  background: #015d9f; /* Old browsers */
+  background: -moz-linear-gradient(left,  #015d9f 0%, #008675 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #015d9f 0%,#008675 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #015d9f 0%,#008675 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#015d9f', endColorstr='#008675',GradientType=1 ); /* IE6-9 */
+}
+
+.bgcolorspring {
+  background-color: #78bd4b;
+}
+
+.bgcolordarkblue {
+  background-color: #0065a6;
+}
+
+.bgcolorblack {
+  background-color: #000000;
+}
+
+.bgcolorlightgrey {
+  background-color: #ccc;
+  /*color: black;*/
+}
+
+.bgcolorlightgrey.activefilter,
+.bgcolorlightgrey:hover,
+.session-tags .bgcolorlightgrey {
+  color: black;
+}
+
+.bgcolordarkgray {
+  background-color: #383737;
+}
+
+.bgcolorlightblue {
+  background-color: #00a0dd;
+}
+
+.bgcolorteal {
+  background-color: #008674;
+}
+
+.attendease-invoice .attendease-header h3 {
+  color: white;
+}
+
+.attendease-login-form .attendease-group .attendease-fields .attendease-help-block {
+  padding-top: 20px !important;
+}
+
+form.attendease-registration-form .attendease-group .attendease-fields {
+  width: 32%
+}
+
+.attendease-form-actions {
+  margin-top: 20px !important;
+}
+
+.attendease-credit-card-cvv {
+  max-width: 320px;
+}
+
+.attendease-schedule .attendease-session-and-instance:first-child .attendease-name {
+  /*margin-top: 30px;*/
+}
+
+.attendease-sessions:before, .attendease-sessions:after {
+  content: "" !important;
+}
+
+button, input[type=submit], input[type=button] .btn, .attendease-button {
+    padding: 12px 28px;
+    background: #00ae9e;
+    border-radius: 50px;
+    font-size: 24px;
+    display: inline-block;
+    border: none;
+    color: white !important;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover, input[type=submit]:hover, input[type=button] .btn:hover, .attendease-button:hover {
+  background: #22c6b2;
+}
+
+.nav-justified > li > a, .nav-tabs.nav-justified > li > a, .nav-justified > li a, .nav-tabs.nav-justified > li a {
+  border-radius: 0;
+}
+
+.event-marquee-foreground-image, 
+.attendease-schedule .attendease-header h1,
+.attendease-presenters .attendease-header h1,
+.attendease-instance-detail .attendease-instance-location-venue,
+.attendease-instance-details .attendease-instance-divider,
+.jumbotron,
+.attendease-duration,
+.attendease-filter-heading {
+  display: none;
+}
+
+.attendease-schedule-action .attendease-button {
+  border: none;
+}
+
+.attendease-schedule-action .attendease-button:hover {
+  border: none;
+}
+
+.attendease-attendee-schedule .attendease-session-and-instance .attendease-instance-details .attendease-time-range
+{
+  display: block;
+  padding: 10px 0;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.attendease-attendee-schedule .attendease-instance-details .attendease-instance-detail {
+  padding: 0;
+  display: block;
+}
+
+.attendease-attendee-schedule .attendease-session-and-instance .attendease-instance-details {
+  display: block !important;
+}
+
+/*.attendease-schedule .attendease-time-range {
+  padding-left: 10px !important;
+}*/
+
+.attendease-schedule {
+/*  display: inline-block;
+  width: 100%;*/
+}
+
+.attendease-schedule .attendease-session-and-instance {
+/*  background: #eeeeee;
+  padding: 0;
+  margin: 0 9px 9px 0;
+  overflow: hidden;
+  position: relative;
+/*  min-height: 60px;
+  float: left;
+  width: 177px;
+  height: 230px;*/
+  /*padding-top: 54px;*/
+  position: relative;
+}
+
+.attendease-attendee-schedule .attendease-schedule .attendease-session-and-instance {
+  /*margin: 35px 0;*/
+  overflow: visible;
+  /*float: none;*/
+  width: 100%;
+  height: 100%;
+}
+
+/*.attendease-schedule .attendease-session-and-instance:nth-child(8), 
+.attendease-schedule .attendease-session-and-instance:nth-child(13), 
+.attendease-schedule .attendease-session-and-instance:nth-child(19),
+.attendease-schedule .attendease-session-and-instance:nth-child(24)
+{
+  margin-right: 0;
+}*/
+
+.attendease-schedule .attendease-presenters,
+.attendease-schedule .attendease-name {
+  padding: 0 10px;
+}
+
+
+
+.attendease-presenters .attendease-presenter-mini {
+  /*margin: 0;*/
+  margin-bottom: 0;
+  display: block;
+}
+
+.attendease-attendee-schedule .attendease-schedule .attendease-session-and-instance {
+  padding-bottom: 15px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #58595b;
+}
+
+.attendease-attendee-schedule .attendease-presenters, 
+.attendease-attendee-schedule .attendease-name {
+  padding: 0;
+}
+
+.attendease-attendee-schedule .attendease-schedule .attendease-date {
+  margin-bottom: 10px;
+}
+.attendease-attendee-schedule .attendease-schedule .attendease-name {
+  width: 60%;
+  margin-left: 0;
+}
+
+.attendease-navigation {
+  margin-bottom: 0;
+}
+
+.attendease-navigation li {
+  margin:0;
+}
+
+.attendease-navigation ul > li > a {
+  border-radius: 0;
+  border: 0;
+}
+
+.event-details {
+  border-bottom: none;
+}
+
+
+.all-link {
+/*  margin-top: 80px;*/
+}
+
+.attendease-presenters .attendease-presenter .attendease-presenter-profile-image {
+  background-image: none;
+  width: 240px;
+  padding-bottom: 0;
+  margin-right: 0;
+  opacity: 0.6;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.attendease-presenters .attendease-presenter .attendease-presenter-profile-image:hover {
+  opacity: 1;
+}
+
+.attendease-presenters .attendease-presenter .attendease-presenter-name a {
+  color: white;
+  font-weight: 400;
+}
+
+.attendease-presenter-name a {
+  /*font-size: 13px;*/
+  color: #00ae9e;
+  font-weight: 300;
+}
+
+.attendease-presenter-name a:hover {
+  color: white;
+}
+
+.attendease-schedule .attendease-session-and-instance .attendease-name h2 {
+  margin-bottom: 0;
+  line-height: 17px;
+}
+
+.attendease-name h2 {
+    font-size: 24px;
+    /* text-transform: none; */
+    margin: 0;
+    /* line-height: 17px; */
+    /* margin: -15px 0 0; */
+    /* font-weight: 100; */
+    /*font-family: "Open Sans", sans-serif;*/
+    font-family: "Proxima Nova", sans-serif;
+    margin: 0 0 10px 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+.attendease-name h2 a {
+  color: white;
+  font-weight: 500;
+}
+
+.attendease-instance-details .attendease-instance-detail.attendease-scheduling-widget {
+  display: none;
+  padding: 0;
+  position: absolute;
+  bottom: 10px;
+  /*border-top: 1px solid #58595b;*/
+}
+
+.attendease-instance-details .attendease-instance-detail.attendease-scheduling-widget .attendease-button {
+  margin-bottom: 0;
+  /*text-transform: none;*/
+  font-size: 12px;
+  color: #00ae9e !important;
+  padding: 7px 10px 0 10px;
+  float: right;
+}
+
+.attendease-instance-details .attendease-instance-detail.attendease-scheduling-widget .attendease-button:hover {
+  color: white !important;
+}
+
+.attendease-schedule .attendease-session-and-instance:last-child {
+    border-bottom-style: solid;
+}
+
+.attendease-schedule .attendease-panel .attendease-panel-info {
+  width: 20%;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  float: right;
+  background: rgba(16,17,40,0.9);
+}
+
+.attendease-schedule .attendease-panel .attendease-panel-info .attendease-panel-heading {
+  background-color: transparent;
+  color: #ccc;
+  border: 1px solid #31256a;
+}
+
+.attendease-schedule .attendease-panel .attendease-panel-info .attendease-panel-body {
+  border-left: 1px solid #31256a;
+  border-right: 1px solid #31256a;
+  border-bottom: 1px solid #31256a;
+}
+
+/*This hides the schedule tab in account/*
+/*.attendease-attendee-schedule .attendease-navigation li:first-child,
+.attendease-order .attendease-navigation li:first-child,
+.attendease-account .attendease-navigation li:first-child {
+  display: none;
+}*/
+
+/* This hides the event surveys in account */
+.attendease-attendee-schedule .attendease-navigation li:nth-child(2),
+.attendease-order .attendease-navigation li:nth-child(2),
+.attendease-account .attendease-navigation li:nth-child(2) {
+  display: none;
+}
+
+.attendease-name h2 a:hover {
+  color: #7b48fe;
+}
+
+.attendease-attendee-header .attendease-attendee-email {
+  padding-top: 10px;
+}
+
+.attendease-schedule .attendease-session-and-instance .attendease-instance-details {
+  margin-top: 0;
+  display: inline-block;
+  display: none;
+/*  width: 40%;*/
+/*  padding:10px;*/
+}
+
+.attendease-schedule .attendease-session-and-instance .attendease-name h2 a {
+  font-size: 18px;
+  line-height: 1.2em;
+}
+
+.attendease-schedule .attendease-session-and-instance .attendease-name h2 a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.attendease-schedule .attendease-session-and-instance,
+.attendease-presenter-profile .attendease-session-and-instances {
+  width: 232px;
+  border-bottom: none;
+  border: 2px solid #58595b;
+  margin: 0 12px 12px 0;
+  padding: 10px 0;
+  font-weight: 400;
+  /*display: inline-block;*/
+  float: left;
+  vertical-align: top;
+  /*height: 280px;*/
+}
+
+.attendease-presenter-profile .attendease-session-and-instances {
+  height: 150px;
+  position: relative;
+}
+
+.featuredsession {
+  border: 2px solid transparent !important;
+  width: 480px !important;
+  /*padding: 10px !important;*/
+}
+
+.featuredsession h2 a {
+  font-size: 18px !important;
+}
+
+.featuredsession .attendease-name {
+  padding: 0 10px 10px;
+}
+
+.bg-purple {
+  background: #33348D;
+}
+
+.bg-blue {
+  background: #3361AA;
+}
+
+.bg-green {
+  background: #099846;
+}
+
+.featuredsession .attendease-presenter-mini a {
+  color: white;
+  opacity: 0.7;
+}
+
+.featuredsession .session-tag {
+  background: none;
+  border: 1px solid white;
+}
+
+.featuredsession .attendease-presenter-mini a:hover {
+  opacity: 1;
+}
+
+.featuredsession .attendease-presenter-name {
+  margin: 10px;
+  float: right;
+  max-width: 70%;
+}
+
+.featuredsession .attendease-presenter-name p {
+  font-size: 14px;
+  font-weight: 200;
+  margin: 20px 10px 20px 0;
+}
+
+.headshot {
+  border-radius: 50%;
+  height: 114px !important;
+  width: 114px !important;
+}
+
+.headshotsmall {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  margin: 10px 0 10px 10px;
+}
+
+.companyname {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0.9;
+}
+
+.attendease-session-and-instance .attendease-description {
+  display: none;
+}
+
+.attendease-attendee-schedule .attendease-schedule .attendease-session-and-instance .attendease-instance-details {
+  margin-left: 0;
+}
+
+.attendease-session [data-instance-id='57842bed4be5dd786700c2d3'] {
+  display: none;
+}
+
+
+.attendease-instance-details .attendease-instance-detail {
+  font-size: 15px;
+  padding: 0 10px;
+  vertical-align: bottom;
+  display: inline-block;
+  /*font-weight: bold;*/
+}
+
+.attendease-time-range,
+.attendease-instance-location {
+/*  color: #58595b;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #58595b;
+  padding: 0 0 10px 10px !important;
+  width: 222px;*/
+}
+
+.attendease-instance-location,
+.attendease-schedule .attendease-instance-location-room {
+  display: none;
+}
+
+.attendease-session .attendease-instance-location,
+.attendease-session .attendease-instance-location-room {
+  display: inline-block;
+}
+
+.attendease-instance-details .attendease-instance-detail:first-child {
+  padding-right: 1px;
+/*  padding-top: 10px;*/
+}
+
+.attendease-instance-details .attendease-instance-detail:last-child {
+  padding-top: 3px;
+  width: 100%;
+  text-align: left;
+}
+
+.attendease-instance-location-room {
+  white-space: pre-wrap;
+  /*font-weight: 300;*/
+  /*font-size: 13px;*/
+  margin-top: 3px;
+}
+
+.attendease-schedule .attendease-instance-location-room {
+  /*font-weight: 600;*/
+  text-transform: uppercase;
+}
+
+.attendease-instance-location-room:before {
+/*  content: ": ";*/
+}
+
+.nav-justified > li.inverse > a, .nav-justified > li.inverse a,
+.attendease-charge-name {
+  background-color: #7b48fe;
+}
+
+.attendease-charge-name {
+  background-image: none;
+}
+
+.container > .navbar-header {
+  background: url(https://d1ophd2rlqbanb.cloudfront.net/logo-springone-small.png) no-repeat center;
+}
+
+.navbar-default {
+  background: rgba(25, 23, 44, 0.4);
+}
+
+.attendease-alert-error, .attendease-charge-name {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.attendease-alert-notice {
+  color: inherit;
+  background-image: none;
+  background-color: transparent;
+  border: 2px solid #00ae9e;
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+.attendease-scheduling-widget {
+  padding: 0;
+}
+
+.attendease-choose-pass-form .attendease-header .attendease-registration-heading {
+  margin-bottom: 50px;
+  font-size: 45px;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+}
+
+.attendease-choose-pass-form {
+    margin-top: 0;
+}
+
+.attendease-registration-choose-pass h2 {
+  font-size: 16px;
+  margin-bottom: 0 !important;
+}
+
+.attendease-registration-code-form #registration_code {
+  font-size: 15px;
+  padding: 7px;
+}
+
+.attendease-registration-code-form .attendease-button {
+  font-size: 15px;
+  padding: 7px 15px;
+}
+
+.attendease-choose-pass-table thead {
+  display: none;
+}
+
+/*.attendease-choose-pass-table [id*='56e32a574be5dd3e24001d69'] .attendease-radio input,*/
+/*.attendease-choose-pass-table [id*='56e73eb74be5dd3f7d0194f5'] .attendease-radio input,*/
+/*.attendease-choose-pass-table [id*='56e73edd4be5dd3f7d019506'] .attendease-radio input {  */
+
+
+/*.attendease-choose-pass-table [id*='572002574be5dd184b000104'] .attendease-radio input,*/
+/*.attendease-choose-pass-table [id*='5720028c4be5dd184b00012e'] .attendease-radio input {*/
+/*  .attendease-choose-pass-table [id*='56e32a944be5dd3e24001d73'] .attendease-radio input,
+.attendease-choose-pass-table [id*='56e73edd4be5dd3f7d019506'] .attendease-radio input
+  {
+   display: none;
+}*/
+
+/*.attendease-choose-pass-table [id*='56e32a574be5dd3e24001d69'] .attendease-radio label,*/
+/*.attendease-choose-pass-table [id*='56e73eb74be5dd3f7d0194f5'] .attendease-radio label,*/
+/*.attendease-choose-pass-table [id*='56e73edd4be5dd3f7d019506'] .attendease-radio label*/
+
+/*.attendease-choose-pass-table [id*='572002574be5dd184b000104'] .attendease-radio label,*/
+/*.attendease-choose-pass-table [id*='5720028c4be5dd184b00012e'] .attendease-radio label {*/
+/*  .attendease-choose-pass-table [id*='56e32a944be5dd3e24001d73'] .attendease-radio label,
+.attendease-choose-pass-table [id*='56e73edd4be5dd3f7d019506'] .attendease-radio label
+  {
+  padding-left: 29px;
+  color: #999;
+}*/
+
+/*.attendease-choose-pass-table [id*='56e32a574be5dd3e24001d69'] .pass-price,*/
+/*.attendease-choose-pass-table [id*='56e73edd4be5dd3f7d019506'] .pass-price {*/
+/*.attendease-choose-pass-table [id*='56e73eb74be5dd3f7d0194f5'] .pass-price,*/
+
+
+/*.attendease-choose-pass-table [id*='572002574be5dd184b000104'] .pass-price,*/
+/*.attendease-choose-pass-table [id*='5720028c4be5dd184b00012e'] .pass-price  {*/
+/*  .attendease-choose-pass-table [id*='56e32a944be5dd3e24001d73'] .pass-price,
+.attendease-choose-pass-table [id*='56e73edd4be5dd3f7d019506'] .pass-price
+  {
+  color: #999;
+}*/
+
+.attendease-schedule .attendease-session-and-instance {
+  word-wrap: break-word;
+}
+
+.attendease-schedule .attendease-filter-session-types-contributor-discussion,
+.attendease-schedule .attendease-filter-session-types-training {
+  background: #f1f1f1;
+  padding: 54px;
+  float: right;
+  width: 49%;
+}
+
+.attendease-schedule .attendease-filter-session-types-solution,
+.attendease-schedule .attendease-filter-session-types-use-case {
+  float: left;
+  width: 48%;
+  vertical-align: top;
+  /*margin-right: 15px;*/
+}
+
+.heightnineteen {
+  height: 1950px;
+}
+
+.heightfivefour {
+  height: 540px;
+}
+
+.heightfivefourtwo {
+  height: 542px;
+}
+
+.heightfivesix {
+  height: 568px;
+}
+
+.heightfiveseventyflat {
+  height: 570px;
+}
+
+.heightfiveseventy {
+  height: 573px;
+}
+
+.heightsix {
+  height: 600px;
+}
+
+.session-toggle-links {
+  padding: 0;
+  margin: 0;
+}
+
+.attendease-schedule li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 5px 10px 0 0;
+}
+
+.attendease-schedule li:first-child:after {
+  content: "|";
+  padding: 0 0 0 10px;
+}
+
+.inactive-session-toggle-link {
+  color: #1e90ff;
+  cursor: pointer;
+}
+
+.inactive-session-toggle-link:hover {
+  color: inherit;
+}
+
+.marginbottomfifty {
+  margin-bottom: 54px;
+}
+
+.breaklunch {
+  width: 100%;
+  overflow: auto;
+}
+
+.margintopfour {
+  margin-top: 4px;
+}
+
+table.attendease-table td,
+table.attendease-table th {
+  padding: 16px 12px 12px 0;
+}
+
+.nostyling {
+  background: none !important;
+  padding: 54px 0 24px !important;
+  float: none !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.event-details .info {
+  color: white;
+}
+
+.event-details h2 {
+  color: #00ae9e;
+}
+
+.required-message,
+.ss-password-warning,
+.ss-required-asterisk {
+  display: none;
+}
+
+.ss-form-entry {
+  padding: 0 0 10px 0;
+}
+
+.ss-q-item-label {
+  width: 58px;
+}
+
+.attendease-session[data-session-id='57647e624be5dd18460053a4'] textarea,
+.attendease-session[data-session-id='57647e624be5dd18460053a4'] input  {
+  width: 600px;
+}
+
+.attendease-session[data-session-id='57647e624be5dd18460053a4'] label {
+  display: block;
+}
+
+
+
+#ss-submit {
+  width: 80px;
+  margin-top: 5px;
+}
+
+#mobileapp img {
+  margin: 0 10px 30px;
+}
+
+
+
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 860px; 
+  }
+}
+
+@media(max-width: 1190px) {
+  .attendease-filter-session-types-contributor-discussion,
+  .attendease-filter-session-types-training,
+  .attendease-filter-session-types-solution,
+  .attendease-filter-session-types-use-case {
+    width: 100%;
+    float: none;
+    /*display: block;*/
+    margin-right: 0;
+  }
+  .attendease-filter-session-types-contributor-discussion,
+  .attendease-filter-session-types-training {
+    padding: 20px;
+  }
+  .margintopfour {
+    margin-top: 0;
+  }
+  .heightnineteen,
+  .heightfivefour,
+  .heightfivesix,
+  .heightfivefourtwo,
+  .heightfiveseventyflat,
+  .heightfiveseventy,
+  .heightsix {
+    height: 100%;
+  }
+}
+
+@media (max-width: 1140px) {
+  #navigation {
+    text-align: center;
+  }
+  #navigation .logo {
+    float: none;
+  }
+  #navigation ul {
+    float: none;
+  }
+  #navigation #desktop-only li {
+    display: inline-block;
+    padding: 10px 0 0;
+  }
+  #navigation #desktop-only li.nav-register {
+    /*margin-top: 20px;*/
+  }
+  .content {
+    /*margin-top: 420px !important;*/
+  }
+}
+
+@media (max-width: 1030px) {
+  .timeline,
+  .timebar,
+  .filter-toggle {
+    display: none;
+  }
+  .attendease-schedule .attendease-session-and-instance:not(.breakbar) {
+    max-width: 232px !important;
+    height: 250px !important;
+    margin: 0 12px 12px 0 !important;
+    float: left !important;
+  }
+  .attendease-schedule .attendease-session-and-instance .attendease-time-range {
+    display: block !important;
+    margin-left: 10px;
+  }
+  #days-ul li span {
+    display: none;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 1000px; 
+    padding: 0 20px;
+  }
+  .speakers .content .container  {
+    max-width: 1440px;
+  }
+  .speakers .content .attendease-presenters .attendease-header {
+    max-width: 1000px; 
+    margin: 25px auto 50px;
+  }
+}
+
+
+/* Responsive */
+
+#mobile-only {
+  display: none;
+}
+
+#mobile-only a {
+  color: white;
+}
+
+#mobile-only .nav > li > a:hover {
+  background-color: #00ae9e !important;
+}
+
+.navbar-collapse {
+  max-height: 360px;
+}
+
+@media (max-width: 858px) {
+/*  .attendease-schedule .attendease-session-and-instance .attendease-instance-details {
+    width: 78%;
+  }*/
+}
+
+@media (max-width:842px) {
+  #navigation  #desktop-only li {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 792px) {
+  #desktop-only #nav-travel {
+    padding-right: 80px !important;
+  }
+}
+
+/*@media (max-width: 772px) {
+  #navigation #desktop-only li {
+    font-size: 16px;
+  }
+}*/
+
+@media (max-width: 768px) {
+  #schedule-bar table img,
+  .breakbar table img {
+    height: 20px;
+  }
+
+
+  #schedule-bar ul > li > a {
+    font-size: 20px;
+  }
+
+  .attendease-time-range {
+    border-bottom: none;
+  }
+  .attendease-session .attendease-name-and-description {
+    width: 100%;
+  }
+
+    .day {
+      width: 250px;
+      margin-bottom: 20px;
+    }
+/*  .attendease-presenters .attendease-presenter .attendease-presenter-profile-image img {
+    width: 100px;
+    height: 100px;
+  }*/
+  .attendease-presenters .attendease-presenter .attendease-presenter-profile-image {
+    width: 240px;
+    height: 240px;
+  }
+/*  .attendease-presenters .attendease-presenter .attendease-presenter-company {
+    display: block;
+  }*/
+/*  .attendease-schedule .attendease-session-and-instance .attendease-instance-details,
+  .attendease-instance-details .attendease-instance-detail {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+  .attendease-schedule .attendease-instance-details .attendease-instance-detail:first-child {
+    padding-left: 10px;
+  }
+  .attendease-attendee-schedule .attendease-instance-details .attendease-instance-detail:first-child,
+  .attendease-attendee-schedule .attendease-instance-details .attendease-instance-detail.attendease-instance-location .attendease-instance-location-room {
+    padding-left: 0;
+  }
+  */
+  .attendease-instance-details .attendease-instance-detail.attendease-instance-location .attendease-instance-location-venue,
+  .attendease-instance-details .attendease-instance-detail.attendease-time-range .attendease-duration {
+    display: none;
+  }
+  .attendease-instance-details .attendease-instance-detail.attendease-instance-location .attendease-instance-location-room:before {
+    content: "";
+  }
+  /*
+  .attendease-instance-details .attendease-instance-detail.attendease-instance-location .attendease-instance-location-room {
+    width: 100%;
+    padding-left: 10px;
+  }
+  .schedule-marker {
+    float: none;
+    width: 100%;
+    height: 60px;
+    position: relative;
+  }
+  .doughnut, .coffee {
+    background-size: initial;
+    background-position: left;
+  }
+  .attendease-schedule .attendease-name {
+    padding-bottom: 10px;
+    margin-left: 10px;
+  }
+  .attendease-schedule .attendease-schedule-status {
+    margin-right: 20px;
+  }
+  .attendease-schedule .attendease-presenters {
+    margin-left: 4px;
+  }
+  .attendease-schedule .attendease-name {
+    padding-bottom: 0;
+  }*/
+  .nav-separator, #schedule-day, .dash {
+    display: none !important;
+  }
+  #nav-schedule-tracks {
+    margin: 0;
+  }
+  #nav-schedule-tracks li {
+    float: left;
+    border: none;
+    padding: 7px 4px 5px;
+  }
+  .attendease-navigation #days-ul li {
+    float: left !important;
+    border: none !important;
+  }
+  #days-ul {
+    width: 100%;
+  }
+  #days-ul li > a {
+    padding: 10px 3px;
+  }
+  .attendease-navigation ul > li.active > a {
+    color: white !important;
+  }
+  .attendease-navigation ul > li, 
+  .attendease-navigation ul > li.active {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .attendease-navigation ul > li.active {
+    background-color: #333333;
+  }
+  .restrict-height {
+    height: 100%;
+  }
+  .attendease-schedule .attendease-session-and-instance:not(.breakbar) {
+    width: 99.5% !important;
+    max-width: 100% !important;
+  }
+/*    .attendease-schedule .breakbar {
+    width: 96.3% !important;
+  }*/
+  .breakbar h3,
+  .sessionbreakbar a {
+    font-size: 16px !important;
+  }
+  .presentationbar .time {
+    margin-left: 0;
+  }
+  #schedule-bar #breakfastbar img, .firstbreak img, .lunch img, #schedule-bar img, .sessionbreakbar img {
+    height: 20px;
+  }
+  #schedule-bar td:nth-child(2),
+  .breakbar  td:nth-child(2) {
+    width: 0;
+  }
+  #schedule-bar td:nth-child(3),
+  .breakbar td:nth-child(3) {
+        width: inherit !important;
+  }
+  #schedule-bar td:nth-child(4) h3,
+  .breakbar td:nth-child(4) h3 {
+    float: right;
+    text-align: right;
+  }
+  .breakbar td:nth-child(4) h3 {
+    padding-right: 15px;
+  }
+  .breakbar {
+    padding: 5px 0 15px 0 !important;
+  }
+  #schedule-bar td:nth-child(4) {
+    /*width: 5px;*/
+  }
+  .sessionbreakbar a,
+  .presentationbar h3,
+  .sessionbreakbar h3 {
+    margin-left: 5px;
+  }
+  .sessionbreakbar .attendease-name h3 {
+    margin-left: 15px;
+  }
+  .presentationbar {
+    padding: 0;
+  }
+  .breakbar {
+    /*max-width: 670px;*/
+    padding: 5px 15px 15px 0;
+    margin: 0 0px 5px 0;
+  }
+  .sessionbreakbar {
+    /*max-width: 680px !important;*/
+    padding: 5px 0 15px 0px !important;
+  }
+  #schedule-bar td:first-child, .breakbar td:first-child {
+    width: 45px;
+  }
+  .lastbreakbar {
+    margin-right: 0 !important;
+  }
+  .container .attendease-navigation #schedule-bar #nav-schedule-tracks li > a {
+    padding: 0;
+  }
+
+/*  .attendease-presenters .attendease-presenter .attendease-presenter-name {
+    margin-left: 0;
+    position: absolute;
+    bottom: 55px;
+    left: 20px;
+    font-size: 21px;
+  }*/
+  .attendease-presenters .attendease-presenter {
+    /*margin-right: 20px;*/
+  }
+  .attendease-presenters .attendease-presenter {
+    /*width: 100%;*/
+    margin-right: 0;
+    /*height: inherit;*/
+  }
+/*  .attendease-presenters .attendease-presenter .attendease-presenter-profile-image {
+    width: 120px;
+  }*/
+/*  .attendease-presenters .attendease-presenter .attendease-presenter-title,
+  .attendease-presenters .attendease-presenter .attendease-presenter-company {
+    display: none;
+  }*/
+}
+
+@media (max-width:767px) {
+  #mobile-only {
+    display: block !important;
+  }
+  #desktop-only, .desktop-only {
+    display: none !important;
+  }
+/*  #navigation {
+    background-color: #2d2d2d;
+  }*/
+  .nav-justified > li.inverse > a, .nav-justified > li.inverse a {
+    font-weight: normal;
+  }
+  #navigation {
+    padding: 35px 0;
+    background: transparent;
+  }
+  .navbar-default {
+    background: rgba(25, 23, 44, 0.9);
+  }
+
+  .container > .navbar-header {
+    padding: 10px 0;
+  }
+  .content {
+    margin-top: 90px !important;
+  }
+  footer, #footer-green-v {
+    /*display: none;*/
+  }
+}
+
+@media(max-width: 655px) {
+  .attendease-session[data-session-id='57647e624be5dd18460053a4'] textarea,
+  .attendease-session[data-session-id='57647e624be5dd18460053a4'] input,
+  .attendease-session[data-session-id='57647e624be5dd18460053a4'] .attendease-description img  {
+    width: 260px;
+  }
+  .attendease-session[data-session-id='57647e624be5dd18460053a4'] textarea {
+    width: 264px;
+  }
+}
+
+@media(max-width: 600px) {
+  .attendease-schedule .attendease-panel .attendease-panel-info {
+    display: none;
+  }
+  .container > .navbar-header {
+    background: url(https://d1ophd2rlqbanb.cloudfront.net/logo-small.png) no-repeat center;
+  }
+  .attendease-choose-pass-table [id*='56e32a574be5dd3e24001d69'] .attendease-radio label, 
+  .attendease-choose-pass-table [id*='56e32a944be5dd3e24001d73'] .attendease-radio label, 
+  .attendease-choose-pass-table [id*='56e73eb74be5dd3f7d0194f5'] .attendease-radio label, 
+  .attendease-choose-pass-table [id*='56e73edd4be5dd3f7d019506'] .attendease-radio label,
+  .attendease-pass-description {
+    padding-left: 0;
+  }
+  .attendease-group label {
+    float: none;
+  }
+  .attendease-registration-code-form #registration_code {
+    margin-bottom: 10px;
+  }
+  .featuredsession .attendease-presenter-name p {
+    display: none;
+  }
+  h1 {
+    margin: 0px 0px 20px;
+  }
+}
+
+@media(max-width: 380px) {
+  #days-ul {
+    max-width: 100%;
+  }
+}
+
+
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+  #navigation #desktop-only li {
+    /*padding: 37px 0;*/
+  }
+}
+
+@media print
+{    
+    footer, #navigation, .attendease-navigation, #h1-account, #h1-register, .attendease-schedule-action, .no-print, .no-print *
+    {
+        display: none !important;
+    }
+    .content {
+      margin-top: 0 !important;
+    }
+}

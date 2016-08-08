@@ -24,7 +24,7 @@ public class SiteController {
 
 	@RequestMapping("/agenda")
 	public String agenda() {
-		return "redirect:https://2016.event.springoneplatform.io/schedule/sessions";
+		return "redirect:https://2016.event.springoneplatform.io/schedule/2016-08-02";
 	}
 
 	@RequestMapping("/code-of-conduct")
@@ -70,7 +70,7 @@ public class SiteController {
 
 	@RequestMapping("/sessions")
 	public String sessions() {
-		return "redirect:https://2016.event.springoneplatform.io/schedule/sessions";
+		return "redirect:https://2016.event.springoneplatform.io/schedule/2016-08-02";
 	}
 
 	@RequestMapping("/speaker-guidelines")
@@ -88,9 +88,14 @@ public class SiteController {
 		return "mainstagespeakerguidelines";
 	}
 
+	@RequestMapping("/sponsors")
+	public String sponsors() {
+		return "sponsors";
+	}
+
 	@RequestMapping("/submit")
 	public String submit() {
-		return "redirect:https://2016.event.springoneplatform.io/schedule/sessions";
+		return "redirect:https://2016.event.springoneplatform.io/schedule/2016-08-02";
 	}
 
 	@RequestMapping("/thank-you")

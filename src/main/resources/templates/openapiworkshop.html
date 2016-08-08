@@ -50,11 +50,13 @@
 						</ul>
 					</div>
 					<div class='thirtywide'>
-						<h2>RSVP</h2>
+						<p><em>This workshop is at capacity. Registering below will add you to the waitlist.</em></p>
+						<h2>Register for Waitlist</h2>
 						<script src="//app-sj05.marketo.com/js/forms2/js/forms2.min.js"></script>
 						<form id="mktoForm_3203"></form>
 						<script>
 							MktoForms2.loadForm("https://app-sj05.marketo.com", "625-IUJ-009", 3203 , function(form){
+								form.setValues({"Addition_Information__c_contact":"Waitlist"});
 								form.onSuccess(function(values, followUpUrl){
 									location.href = "/thank-you";
 									form.getFormElem().hide();
