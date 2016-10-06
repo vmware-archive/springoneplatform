@@ -75,6 +75,7 @@ a {
 
 a:hover, a:focus {
   color: #428d92;
+  text-decoration: none;
 }
 
 .content {
@@ -705,12 +706,12 @@ b, strong {
 
 #navigation {
   background-color: transparent;
-  padding: 45px 0;
+  padding: 0 0 45px;
 }
 
 #logosmall {
   /*width: 273px;*/
-  height: 44px;
+  /*height: 44px;*/
 }
 
 #nav a:hover {
@@ -755,21 +756,44 @@ b, strong {
   margin: 0 8px;
 }
 
+#navigation #supernav {
+  border-bottom: 2px solid #414042;
+  margin-bottom: 33px;
+}
+
+#pivotallogo .cls-2 {
+  fill: white;
+  transition: fill .5s;
+}
+
+#pivotallogo:hover .cls-2 {
+  fill: #00ae9e;
+} 
+
 #navigation #desktop-only li:last-child {
-  margin: 0 0 0 8px;
+  margin: 0 4px 0 8px;
 }
 
 #navigation #desktop-only li a {
-  color: white;
+  /*color: white;*/
   font-size: 17px;
 }
 
 #navigation #desktop-only li a:hover {
-  color: #00ae9e;
+  color: white;
 }
 
 #navigation #desktop-only li.nav-register {
   /*margin: 0 0 0 30px;*/
+}
+
+#pivotallogo {
+  float: right;
+  margin-top: 10px;
+}
+
+#pivotallogo svg {
+  height: 28px;
 }
 
 /*#navigation #desktop-only li.nav-register a {
@@ -2455,7 +2479,7 @@ table.attendease-table th {
 
 @media (max-width: 1140px) {
   #navigation {
-    text-align: center;
+    /*text-align: center;*/
   }
   #navigation .logo {
     float: none;
@@ -2465,7 +2489,7 @@ table.attendease-table th {
   }
   #navigation #desktop-only li {
     display: inline-block;
-    padding: 10px 0 0;
+    /*padding: 10px 0 0;*/
   }
   #navigation #desktop-only li.nav-register {
     /*margin-top: 20px;*/

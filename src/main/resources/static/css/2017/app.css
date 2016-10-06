@@ -1,0 +1,497 @@
+/* General */
+
+h1 {
+	font-size: 40px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.smoothwebkit {
+	font-weight: 200;
+}
+
+h2 {
+	margin: 30px 0;
+	line-height: 1.3em;
+	font-size: 28px;
+}
+
+h3 {
+	margin: 0;
+}
+
+.cta a, 
+.btn, 
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+	border-radius: 0;
+	font-size: 19px !important;
+	padding: 5px 15px !important;
+}
+
+#footer {
+	border-top: 2px solid #414042;
+	padding: 50px 0;
+}
+
+	#footer .left h2 {
+		margin: 30px 0 0;
+	}
+
+	#footer #logosmall {
+		height: 40px;
+	}
+
+	#footer h4 {
+    color: #bcbec0;
+    margin: 0;
+    font-size: 18px;
+	}
+
+
+/* Homepage */
+
+.video-container {
+	position: relative;
+	max-height: 600px;
+	overflow: hidden;
+}
+
+	.video-overlay {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		background: rgba(0,0,0,0.2);
+		z-index: 1;
+		cursor: pointer;
+	}
+
+		.video-overlay-text-container {
+			position: relative;
+		  top: 50%;
+		  transform: translateY(-50%);
+		  padding: 0 20px;
+		}
+
+		.video-overlay-text {
+			font-size: 46px;
+			font-weight: 400;
+			margin-bottom: 25px;
+		}
+
+		.video-overlay-text-container img {
+			height: 150px;
+		}
+
+	.video-wrapper {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		height: 0;
+		margin-top: -100px;
+	}
+
+		.video-wrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0.6;
+		}
+
+.fifties {
+	border-bottom: 2px solid #414042;
+	overflow: hidden;
+}
+
+	.fifty {
+		width: 100%;
+    float: left;
+    max-width: 50%;
+    display: block;
+    height: 540px;
+	}
+
+	.fifty .inner {
+		top: 50%;
+		position: relative;
+		transform: translateY(-50%);
+	}
+
+	.fifty h2 {
+		max-width: 330px;
+		margin: 30px auto;
+	}
+
+	.fifty h3 {
+		color: #bcbec0;
+    font-size: 22px;
+    max-width: 390px;
+    margin: 0 auto;
+	}
+
+	#location {
+    position: relative;
+	}
+
+	#goldengateinafog {
+    transform: translate3d(0px, -70px, 0px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;		
+	}
+
+	#redmonkquote h2,
+	#springpcf h2 {
+		color: #bcbec0;
+	}
+
+	#redmonklogo {
+		height: 33px;
+	}
+
+	#photos {
+		position: relative;
+		overflow: hidden;
+	}
+
+	#photos #photosleft {
+		position: absolute;
+    left: 0;
+    top: 0;
+	}
+
+	#photos #escalator {
+    transform: translate3d(0px, -140px, 0px);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+	}
+
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+		#photos #escalator,
+		#goldengateinafog {
+	    transform: translate3d(0px, 0px, 0px);
+	  }
+	}
+
+#springpcf .container {
+	padding: 80px 20px;
+	text-align: center;
+	max-width: 800px;
+}
+
+	#springpcf h2 {
+		margin: 30px 0 0;
+	}
+
+	#springpcf p {
+		margin: 10px 0 30px;
+	}
+
+	#springpcf #springlogo,
+	#springpcf #pcflogo {
+		height: 55px;
+	}
+
+	#springpcf #iconplusgray {
+		height: 35px;
+		margin: 0 30px;
+	}
+
+#sponsors {
+	padding: 80px 0 30px;
+	background: transparent;
+	border-top: 2px solid #414042;
+}
+
+	#sponsors h1 {
+		margin: 40px 0;
+	}
+
+	#sponsors img {
+    opacity: 0.4;
+    transition: all .2s;
+	}
+
+	#sponsors img:hover {
+    opacity: 0.5;
+	}
+
+	#sponsors .sponsors {
+		margin-bottom: 35px;
+	}
+
+	#sponsors .sponsors:nth-child(3) {
+		margin-bottom: 60px;
+	}
+
+	#sponsors .sponsor {
+		display: inline-block;
+		vertical-align: top;
+		border: none;
+		width: inherit;
+		height: 100px;
+		float: none;
+	}
+
+	#sponsors h5 {
+		font-size: 17px;
+    letter-spacing: 0.1em;
+	}
+
+	#sponsors .container {
+		max-width: 1050px;
+	}
+
+	#sponsors #apigee {
+		height: 30px;
+		margin-top: 10px;
+	}
+
+	#sponsors #emc {
+		height: 25px;
+		margin-top: 10px;
+	}
+
+	#sponsors #gcp {
+    width: inherit;
+    height: 58px;
+	}
+
+	#sponsors #hortonworks {
+		height: 47px;
+	}
+
+	#sponsors #msft {
+		height: 27px;
+		margin-top: 10px;
+	}
+
+	#sponsors #atos {
+    height: 24px;
+    margin-top: 10px;
+	}
+
+	#sponsors #cognizant,
+	#sponsors #enterprisedb {
+		height: 40px;
+	}
+
+	#sponsors #dynatrace {
+		height: 22px;
+		margin-top: 10px;
+	}
+
+	#sponsors #heroku {
+		height: 32px;
+		margin-top: 7px;
+	}
+
+	#sponsors #stormpath {
+		max-width: inherit;
+    height: 22px;
+    margin-top: 13px;
+	}
+
+	#sponsors #hazelcast {
+		height: 30px;
+	}
+
+	#sponsors #aws {
+		height: 35px;
+		margin-top: 3px;
+	}
+
+	#sponsors #broadleaf {
+		height: 40px;
+	}
+
+	#sponsors #cloudfoundry {
+		height: 20px;
+    margin-top: 20px;
+	}
+
+	#sponsors #forgerock {
+		height: 25px;
+		margin-top: 10px;
+	}
+
+	#sponsors #hazelcast {
+		height: 25px;
+		margin-top: 13px;
+	}
+
+	#sponsors #insys {
+		height: 26px;
+    width: inherit;
+    margin-top: 15px;
+	}
+
+	#sponsors #jetbrains {
+		height: 70px;
+    width: inherit;
+	}
+
+	#sponsors #mimacom {
+		height: 23px;
+    margin-top: 23px;
+	}
+
+	#sponsors #mongodb {
+		height: 34px;
+    margin-top: 15px;
+	}
+
+	#sponsors #newrelic {
+		height: 20px;
+    margin-top: 25px;
+	}
+
+	#sponsors #ntt {
+		height: 15px;
+    margin-top: 27px;
+	}
+
+	#sponsors #predix {
+		height: 15px;
+    margin-top: 27px;
+	}
+
+	#sponsors #target {
+		height: 50px;
+	}
+
+	#sponsors #tcs {
+		height: 39px;
+    margin-top: 7px;
+	}
+
+	#sponsors #techolution {
+	  max-width: inherit;
+	  margin-top: 15px;
+	  height: 18px;
+	}
+
+	#sponsors #wwt {
+		height: 29px;
+    margin-top: 11px;
+	}
+
+	#sponsors #zeroturnaround {
+		height: 20px;
+    margin-top: 17px;
+	}
+
+	#sponsors #galvanize {
+		height: 24px;
+		margin-top: 13px;
+	}
+
+	#sponsors #gemalto {
+		height: 30px;
+		margin-top: 10px;
+	}
+
+	#sponsors #perficient {
+		height: 30px;
+		margin-top: 12px;
+	}
+
+	#sponsors #kenzan {
+		height: 34px;
+	}
+
+	#sponsors #dzone {
+		height: 28px;
+	}
+
+	#sponsors #infoq {
+		height: 27px;
+    margin-top: 5px;
+	}
+
+	#sponsors #oreilly {
+		height: 24px;
+    margin-top: 5px;
+	}
+
+	#sponsors .sponsor img {
+		padding: 30px !important;
+	}
+
+
+/* Stay informed */
+
+body#stayinformed form {
+	margin: 20px 0 80px !important;
+}
+
+
+/* On the list */
+
+body#onthelist .content {
+	min-height: 500px;
+}
+
+	body#onthelist h2 {
+		color: #bcbec0;
+	}
+
+
+/* Responsive */
+
+@media(max-width: 1200px) {
+	#photos #escalator,
+	#goldengateinafog {
+		transform: translate3d(0px, 0px, 0px) !important;
+	}
+}
+
+@media(max-width: 866px) {
+	.fifty {
+		max-width: 100%;
+		float: none;
+	}
+	.fifty .inner {
+		padding: 0 20px;
+	}
+	#photos {
+		display: none;
+	}
+}
+
+@media(max-width: 800px) {
+	.video-wrapper {
+		margin-top: 0;
+	}
+	.video-overlay-text {
+		font-size: 30px;
+	}
+	.video-overlay-text-container img {
+    height: 100px;
+	}
+}
+
+@media(max-width: 600px) {
+	#sponsors .sponsor img {
+    padding: 15px !important;
+	}
+}
+
+@media(max-width: 480px) {
+	.video-overlay-text {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	.video-overlay-text-container img {
+    height: 70px;
+	}
+}

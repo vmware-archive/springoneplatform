@@ -1,0 +1,29 @@
+<html
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorator="2017layout">
+    <head>
+    	<title>Stay Informed</title>
+    </head>
+
+	<body id='stayinformed'>
+
+    <div layout:fragment="content">
+			<div class='content'>
+				<div class='container'>
+					<h1>Stay Informed about 2017</h1>
+          <script src="//app-sj05.marketo.com/js/forms2/js/forms2.min.js"></script>
+          <form id="mktoForm_3272"></form>
+          <script>
+            MktoForms2.loadForm("https://app-sj05.marketo.com", "625-IUJ-009", 3272 , function(form){
+              form.onSuccess(function(values, followUpUrl){
+                location.href = "/on-the-list";
+                form.getFormElem().hide();
+                return false;
+              });
+            });
+          </script>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
