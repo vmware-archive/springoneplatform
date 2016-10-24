@@ -9,18 +9,36 @@ $(document).ready(function() {
 
 	if (window.location.hash == '#play') {
 		$('.video-wrapper iframe').attr('src',"https://player.vimeo.com/video/185578147?color=01786e&amp;title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1");
+		$('.video-wrapper iframe').css('opacity','1');
 		$('.video-overlay').fadeOut();
 	}
 
 	$('.video-overlay').click(function (){
 		$('.video-wrapper iframe').attr('src',"https://player.vimeo.com/video/185578147?color=01786e&amp;title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1");
+		$('.video-wrapper iframe').css('opacity','1');
 		$(this).fadeOut();
+	});
+
+
+	var iframeheight = $('iframe').height();
+	var wrappermargintop = -((iframeheight-600)/2);
+	if (wrappermargintop < 0) {
+		$('.video-wrapper').css('margin-top',wrappermargintop);			
+	}	
+
+
+	$(window).resize(function () {
+		var iframeheight = $('iframe').height();
+		var wrappermargintop = -((iframeheight-600)/2);
+		if (wrappermargintop < 0) {
+			$('.video-wrapper').css('margin-top',wrappermargintop);			
+		}	
 	});
 
 	$(window).scroll(function() {
 	  var scrolledY = $(window).scrollTop();
 	  var scrollpxbridge = (-70+(scrolledY/10));
-	  var scrollpxescalator = (-140+(scrolledY/10));
+	  var scrollpxescalator = (-100+(scrolledY/10));
 	  if (scrollpxbridge < 0) {
 	  	$('#goldengateinafog').css('transform', 'translate3d(0px, ' + scrollpxbridge + 'px, 0px');
 	  }
