@@ -7,6 +7,11 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 
 $(document).ready(function() {
 
+  $('.navbar-toggle').click(function (){
+  	$(this).toggleClass('collapsed');
+  	$('.nav-bar').toggleClass('collapse in autoheight');
+  });
+
 	if (window.location.hash == '#play') {
 		$('.video-wrapper iframe').attr('src',"https://player.vimeo.com/video/185578147?color=01786e&amp;title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1");
 		$('.video-wrapper iframe').css('opacity','1');
