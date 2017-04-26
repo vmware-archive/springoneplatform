@@ -16,7 +16,7 @@ applications:
   path: build/libs/springoneplatform-site-0.0.1-SNAPSHOT.jar
 - name: platform
   buildpack: https://github.com/cloudfoundry/java-buildpack
-  memory: 512M
+  memory: 1GB
   instances: 1
   host: platform
   domain: cfapps.io

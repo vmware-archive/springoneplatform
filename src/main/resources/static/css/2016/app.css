@@ -1737,7 +1737,7 @@ body#sponsorspage #sponsors {
     margin-bottom: 50px;
   }
 
-  #footer #pivotallogo {
+  #footer .pivotallogo {
     float: none; 
   }
 

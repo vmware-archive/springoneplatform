@@ -757,16 +757,16 @@ b, strong {
 }
 
 #navigation #supernav {
-  border-bottom: 2px solid #414042;
+  border-bottom: 2px solid rgba(255,255,255,0.1);
   margin-bottom: 33px;
 }
 
-#pivotallogo .cls-2 {
+.pivotallogo .cls-2 {
   fill: white;
   transition: fill .5s;
 }
 
-#pivotallogo:hover .cls-2 {
+.pivotallogo:hover .cls-2 {
   fill: #00ae9e;
 } 
 
@@ -787,13 +787,19 @@ b, strong {
   /*margin: 0 0 0 30px;*/
 }
 
-#pivotallogo {
+.pivotallogo {
   float: right;
-  margin-top: 10px;
+  margin: 15px 0 13px;
 }
 
-#pivotallogo svg {
+#supernav .pivotallogo svg {
+  height: 24px;
+  max-width: 94px;
+}
+
+#footer .pivotallogo svg {
   height: 28px;
+  max-width: 120px;
 }
 
 /*#navigation #desktop-only li.nav-register a {
@@ -2484,9 +2490,9 @@ table.attendease-table th {
   #navigation .logo {
     float: none;
   }
-  #navigation ul {
+/*  #navigation ul {
     float: none;
-  }
+  }*/
   #navigation #desktop-only li {
     display: inline-block;
     /*padding: 10px 0 0;*/
@@ -2519,6 +2525,12 @@ table.attendease-table th {
     display: none;
   }
 
+}
+
+@media (min-width: 800px) {
+  #logosmall {
+    height: 40px;
+  }
 }
 
 @media (min-width: 768px) {

@@ -111,7 +111,7 @@ public class SiteController {
 
 	@RequestMapping(value={"/sessions","/2016/sessions"})
 	public String sessions() {
-		return "redirect:https://2016.event.springoneplatform.io/schedule/2016-08-02";
+		return "redirect:https://2017.springoneplatform.io/ehome/s1p/registration";
 	}
 
 	@RequestMapping("/2016/speaker-guidelines/breakout")
@@ -151,7 +151,7 @@ public class SiteController {
 
 	@RequestMapping(value={"/submit","/2016/submit"})
 	public String submit() {
-		return "redirect:https://2016.event.springoneplatform.io/schedule/2016-08-02";
+		return "redirect:/";
 	}
 
 	@RequestMapping("/thank-you")
@@ -166,7 +166,7 @@ public class SiteController {
 
 	@RequestMapping("/training")
 	public String training() {
-		return "redirect:/2016/training";
+		return "2017training";
 	}
 
 	@RequestMapping("/2016/travel")
@@ -205,7 +205,7 @@ public class SiteController {
 
 	@RequestMapping("*")
 	public String fallbackMethod() {
-		return "2016404";
+		return "2017404";
 	}
 
 }
