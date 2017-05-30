@@ -45,8 +45,8 @@ public class SiteController {
 	}
 
 	@RequestMapping("/code-of-conduct")
-	public String codeofconduct() {
-		return "redirect:/2016/code-of-conduct";
+	public String codeofconduct2017() {
+		return "2017codeofconduct";
 	}
 
 	@RequestMapping("/2016/faq")
@@ -169,6 +169,21 @@ public class SiteController {
 		return "2017training";
 	}
 
+	@RequestMapping("/training/pivotal-cloud-foundry")
+	public String trainingpcf() {
+		return "2017trainingpcf";
+	}
+
+	@RequestMapping("/training/spring-cloud-services")
+	public String trainingscs() {
+		return "2017trainingscs";
+	}
+
+	@RequestMapping("/training/spring-boot-developer")
+	public String trainingsbd() {
+		return "2017trainingsbd";
+	}
+
 	@RequestMapping("/2016/travel")
 	public String travel2016() {
 		return "2016travel";
@@ -176,7 +191,7 @@ public class SiteController {
 
 	@RequestMapping("/travel")
 	public String travel() {
-		return "redirect:/2016/travel";
+		return "2017travel";
 	}
 
 	// 2015

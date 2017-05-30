@@ -52,6 +52,20 @@ $(document).ready(function() {
 	  }
 	});
 
+	$('.openstayinformed').click(function () {
+  	$(this).next().slideToggle();
+    $('html, body').animate({
+        scrollTop: $(this).offset().top-50
+    }, 500);
+  });
+
+  if (document.location.hash.indexOf('stayinformed') > -1) {
+  	$('.stayinformed').slideToggle();
+    $('html, body').animate({
+        scrollTop: $('.openstayinformed').offset().top-50
+    }, 500);  	
+  }
+
 
 });
 

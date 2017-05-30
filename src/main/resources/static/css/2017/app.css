@@ -30,6 +30,7 @@ h3 {
 p {
 	font-size: 18px;
   line-height: 1.7em;
+  color: #bcbec0;
 }
 
 .antialiased {
@@ -46,6 +47,15 @@ p {
   font-size: 15px;
   float: left;
   margin: 15px 0 13px;
+}
+
+.navbar h5 {
+	text-align: center;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+  padding: 0 0 5px;
+  font-size: 13px;
 }
 
 .cta a, 
@@ -72,6 +82,15 @@ p {
     color: #bcbec0;
     margin: 0;
     font-size: 18px;
+	}
+
+	#footer #stayinformed h2 {
+		font-size: 30px;
+		-webkit-font-smoothing: auto;
+	}
+
+	#footer #stayinformed .openstayinformed h2 {
+		margin: 0;
 	}
 
 
@@ -118,7 +137,6 @@ p {
 		position: relative;
 		padding-bottom: 56.25%; /* 16:9 */
 		height: 0;
-		/*margin-top: -105px;*/
 	}
 
 		.video-wrapper iframe {
@@ -130,94 +148,6 @@ p {
 			opacity: 0.8;
 		}
 
-/*.fifties {
-	border-bottom: 2px solid #414042;
-	overflow: hidden;
-}
-
-	.fifty {
-		width: 100%;
-    float: left;
-    max-width: 50%;
-    display: block;
-    height: 540px;
-	}
-
-	.fifty .inner {
-		top: 50%;
-		position: relative;
-		transform: translateY(-50%);
-	}
-
-	.fifty h2 {
-		max-width: 370px;
-		margin: 30px auto;
-	}
-
-	.fifty h3 {
-		color: #bcbec0;
-    font-size: 22px;
-    max-width: 390px;
-    margin: 0 auto;
-	}
-
-	#location {
-    position: relative;
-	}
-
-		#location a {
-			color: white;
-		}
-
-		#location a:hover {
-			color: #00ae9e;
-		}
-
-	#goldengateinafog {
-    transform: translate3d(0px, -70px, 0px);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;		
-	}
-
-	#redmonkquote h2,
-	#springpcf h2 {
-		color: #bcbec0;
-	}
-
-	#redmonklogo {
-		height: 33px;
-	}
-
-	#photos {
-		position: relative;
-		overflow: hidden;
-	}
-
-	#photos #photosleft {
-		position: absolute;
-    left: 0;
-    top: 0;
-	}
-
-	#photos #escalator {
-    transform: translate3d(0px, -100px, 0px);
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-	}*/
-/*
-	@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
-		@media {
-			#photos #escalator,
-			#goldengateinafog {
-		    transform: translate3d(0px, 0px, 0px);
-		  }
-		}
-	}*/
 
 #meetbuilddeploy .container {
 	padding: 80px 20px 50px;
@@ -276,6 +206,38 @@ hr {
 	#fivereasons span {
 		font-size: 17px;
 		color: #bcbec0;
+	}
+
+	.thirtywide {
+		max-width: 33%;
+		width: 100%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	#pricing {
+		margin: 40px 0 10px;
+	}
+
+	#pricing .price {
+		color: #3744bc;
+	}
+
+	#pricing p {
+		font-size: 17px;
+    color: #bcbec0;
+    margin: 8px 0 0;
+	}
+
+	#pricing .twentywide {
+		border-right: 2px solid rgba(255,255,255,0.1); 
+    padding: 0 25px;
+    margin: 0;
+	}
+
+	#pricing .twentywide:last-child {
+		border-right: none;
+		margin-top: 14px;
 	}
 
 
@@ -573,6 +535,173 @@ hr {
 		padding: 30px !important;
 	}
 
+#footer .right p {
+	margin-top: 40px;
+}
+
+body#travel .content #hero {
+	background: url(https://d1ophd2rlqbanb.cloudfront.net/2017/travel-hero-sfo-bikes.jpg) no-repeat right #2d2262;
+	background-size: auto 100%;
+  padding: 173px 0 43px;
+}
+
+	body#travel .content #hero h1 {
+		max-width: 400px;
+    line-height: 1.3em;
+	}
+
+body#travel .content h1 {
+	font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+}
+
+	body#travel .content p {
+		color: #bcbec0;
+		margin: 0;
+	}
+
+	body#travel .content h2 {
+		margin: 30px 0 0;
+		-webkit-font-smoothing: auto;
+		font-weight: 400;
+	}
+
+	body#travel .content #hotels {
+		margin: 20px 0 60px;
+	}
+
+		body#travel .content #hotels img {
+			margin-bottom: 20px;
+		}
+
+		body#travel .content #hotels a {
+			font-weight: 400;
+		}
+
+	body#travel table td:nth-child(2) {
+		width: 20px;
+	}
+
+.white {
+	color: white !important;
+}
+
+.semibold {
+	font-weight: 400;
+}
+
+.bold {
+	font-weight: 500;
+}
+
+.greenspan {
+	color: #86c877;
+}
+
+.gray {
+	color: #bcbec0;
+}
+
+body#training .content {
+	padding-bottom: 0;
+}
+
+	body#training .content #hero {
+		background: url(https://d1ophd2rlqbanb.cloudfront.net/2017/training-hero.jpg) no-repeat right #2d2262;
+		background-size: cover;
+		padding: 90px 0 45px;
+	}
+
+	body#training .content #hero h1 {
+		font-weight: 100;
+	  -webkit-font-smoothing: antialiased;
+	  line-height: 1.2em;
+	  max-width: 555px;
+	}
+
+	body#training .content #hero h2 {
+		margin: 10px 0 20px;
+    font-weight: 500;
+	}
+
+	body#training .content #hero h3 {
+		max-width: 820px;
+	}
+
+	body#training .content li {
+		color: #bcbec0;
+		font-size: 18px;
+	}
+
+	body#training .content .fifties {
+		overflow: auto;
+	}
+
+	body#training .content #courses {
+		background: #2d2262;
+		padding: 70px 0;
+	}
+
+		body#training .content #courses h1 {
+			margin-bottom: 40px;
+		}
+
+		body#training .content #courses .box {
+			border: 1px solid rgba(255,255,255,0.2);
+			padding: 35px;
+			margin-right: 25px;
+			display: block;
+			text-align: center;
+		}
+
+		body#training .content #courses .thirtywide:last-child .box {
+			margin-right: 0;
+		}
+
+		body#training .content #courses .box:hover {
+			background: rgba(255,255,255,0.1);
+		}
+
+		body#training .content #courses h3 {
+			font-weight: 400;
+			line-height: 1.3em;
+		}
+
+		body#training .content #courses img {
+			max-width: 227px;
+			max-height: 47px;
+		}
+
+		body#training .content #courses .springlogo {
+			max-width: 165px;
+			max-height: 44px;
+		}
+
+		body#training .content #courses hr {
+			max-width: 144px;
+		}
+
+	body#training #footer {
+		border-top: none;
+	}
+
+	body#training #course h2 {
+		margin: 40px 0 0;
+	}
+
+		body#training #course img {
+			float: right;
+		}
+
+		body#training #course #pcflogo {
+			max-width: 250px;
+			max-height: 52px;
+		}
+
+		body#training #course #springlogo {
+			max-width: 180px;
+			max-height: 48px;
+		}
 
 /* Stay informed */
 
@@ -604,18 +733,91 @@ body#onthelist .content {
 	}
 }
 
+@media(max-width: 1070px) {
+	body#travel .content #hero {
+		background-image: none;
+	}
+}
+
 @media(max-width: 1020px) {
 	#fivereasons .twentywide {
 		width: 33%;
 		margin: 0;
 	}
+	#pricing .twentywide {
+		width: 18%;
+	}
+}
+
+@media(max-width: 955px) {
+	#footer .left {
+		margin-bottom: 50px;
+	}
+	#footer .right p {
+		margin-top: 20px;
+	}
 }
 
 @media(max-width: 881px) {
-	#homehighlights .fifty {
+	.fifty {
 		width: 100%;
     max-width: 100%;
     float: none;
+	}
+	body#training .content .thirtywide {
+		max-width: 100%;
+	}
+	body#training .content #courses .box {
+		margin: 0 0 20px;
+	}
+	body#training #course img {
+    float: none;
+    display: block;
+    margin-bottom: 20px;
+	}
+}
+
+@media(max-width: 874px) {
+	#pricing .twentywide {
+		max-width: 160px;
+		width: 100%;
+		border-right: none;
+		margin: 0 auto 30px;
+		display: block;
+	}
+	#pricing .twentywide:last-child {
+		margin: 0 auto;
+	}
+	#pricing .twentywide:first-child {
+		margin-left: auto;
+	}
+	#pricing .twentywide:last-child {
+		margin-right: auto;
+	}
+}
+
+
+@media(max-width: 767px) {
+	h1 {
+		font-size: 40px;
+	}
+	.masthead .container {
+		padding: 0;
+	}
+	.container > .navbar-header {
+	  padding: 2px 0;
+	}
+	.navbar-toggle {
+		margin-right: 5px;
+	}
+	#navigation {
+		min-height: 88px;
+		padding: 0;
+	}
+	.thirtywide {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 30px;
 	}
 }
 
