@@ -60,7 +60,7 @@ d[0].offsetTop||15===d[0].offsetTop;d.remove();a.fixedPosition=e}f.extend(b.defa
 * Built on Mon Mar 09 2015 13:11:43 
 *
 * Copyright 2015 Silvestre Herrera <silvestre.herrera@gmail.com> and contributors, Licensed under the MIT license:
-* http://www.opensource.org/licenses/mit-license.php
+* https://www.opensource.org/licenses/mit-license.php
 *
 * You can find a list of contributors at:
 * https://github.com/silvestreh/onScreen/graphs/contributors
