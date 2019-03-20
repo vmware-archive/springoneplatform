@@ -7301,8 +7301,8 @@ table.attendease-table {
 
 
 
-@import url(http://fonts.googleapis.com/css?family=Domine);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Domine);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 @font-face {
   font-family:'Proxima Nova';
@@ -7336,7 +7336,7 @@ table.attendease-table {
 }
 
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* https://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
